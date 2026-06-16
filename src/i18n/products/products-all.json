@@ -1,0 +1,1777 @@
+{
+  "generated": "2026-04-19",
+  "company": "Naive Innova Co., Ltd.",
+  "total": 12,
+  "products": [
+    {
+      "id": "bio-shampoo",
+      "num": "01",
+      "category": "Cleaning & Grooming",
+      "categoryTh": "ทำความสะอาด",
+      "categoryColor": "green",
+      "name": "ไบโอแชมพู",
+      "nameEn": "Bio Shampoo",
+      "tagline": "แชมพูสูตรธรรมชาติ อ่อนโยนสำหรับสัตว์เลี้ยงทุกสายพันธุ์",
+      "pitch": "แชมพูทำความสะอาดสำหรับสัตว์เลี้ยง สูตรจากส่วนผสมธรรมชาติ ปราศจากสารเคมีรุนแรง อ่อนโยนต่อผิวหนังและขน เหมาะสำหรับสุนัขและแมวทุกสายพันธุ์ รวมถึงสัตว์ผิวแพ้ง่าย",
+      "price": "355",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "100 / 200 / 300 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 4,600 บาท (100ml. × 100 ชิ้น)",
+      "claims": [
+        "ไม่มี SLS / SLES",
+        "ไม่มีซิลิโคน",
+        "ไม่มีพาราเบน",
+        "ปลอดแอลกอฮอล์"
+      ],
+      "pricing": [
+        {
+          "size": "100 ml.",
+          "q100": "46 (4,600)",
+          "q500": "44 (22,000)",
+          "q1000": "42 (42,000)"
+        },
+        {
+          "size": "200 ml.",
+          "q100": "85 (8,500)",
+          "q500": "81 (40,500)",
+          "q1000": "77 (77,000)"
+        },
+        {
+          "size": "300 ml.",
+          "q100": "105 (10,500)",
+          "q500": "100 (50,000)",
+          "q1000": "95 (95,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "ทำความสะอาดล้ำลึก คงความชุ่มชื้น",
+          "desc": "ล้างสะอาดโดยไม่ทำลายสมดุลผิว ช่วยให้ขนนุ่มลื่น เงางาม หวีง่าย",
+          "titleEn": "Deep Cleaning & Moisturizing",
+          "descEn": "Cleans thoroughly without damaging skin balance. Leaves fur soft, shiny, and easy to comb."
+        },
+        {
+          "title": "ลดเชื้อ ลดกลิ่นอับ",
+          "desc": "EcoGuard Plus ยับยั้งแบคทีเรีย ยีสต์ และราอย่างปลอดภัย",
+          "titleEn": "Anti-microbial & Deodorizing",
+          "descEn": "EcoGuard Plus safely inhibits bacteria, yeast, and fungi."
+        },
+        {
+          "title": "อ่อนโยน ใช้ได้ทุกสายพันธุ์",
+          "desc": "ปลอดภัยสำหรับสัตว์ผิวแพ้ง่าย ช่วยลดปัญหาผิวหนังซ้ำซาก",
+          "titleEn": "Gentle for All Breeds",
+          "descEn": "Safe for sensitive skin. Helps reduce recurring skin issues."
+        },
+        {
+          "title": "ส่วนผสมจากธรรมชาติ",
+          "desc": "Chamomile + Lavender Oil กลิ่นหอมอ่อนละมุน ผ่อนคลาย",
+          "titleEn": "Natural Ingredients",
+          "descEn": "Chamomile + Lavender Oil provide a gentle, relaxing fragrance."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Chamomilla Extract",
+          "desc": "บรรเทาอาการคันและลดการอักเสบของผิวหนัง",
+          "nameEn": "Chamomilla Extract",
+          "descEn": "Soothes itching and reduces skin inflammation."
+        },
+        {
+          "name": "Lavender Oil",
+          "desc": "กลิ่นหอมอ่อนละมุน ช่วยผ่อนคลาย มีคุณสมบัติต้านแบคทีเรีย",
+          "nameEn": "Lavender Oil",
+          "descEn": "Soft relaxing scent with natural anti-bacterial properties."
+        },
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ยับยั้งแบคทีเรีย ลดความเสี่ยงของการติดเชื้อ",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Inhibits bacteria, reduces skin infection risk."
+        },
+        {
+          "name": "Natural Cleansing Base",
+          "desc": "สารทำความสะอาดอ่อนโยน ปราศจาก SLS/SLES",
+          "nameEn": "Natural Cleansing Base",
+          "descEn": "Gentle cleansing surfactants, SLS/SLES free."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Broth Microdilution (CLSI M07-A11)",
+          "result": "ยับยั้ง S. pseudintermedius, P. aeruginosa, E. coli ที่ ≤0.0977%",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Broth Microdilution",
+          "resultEn": "Inhibits S. pseudintermedius, P. aeruginosa, E. coli at ≤0.0977%"
+        },
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Anti-Yeast (CLSI M27-A3)",
+          "result": "ยับยั้ง Malassezia pachydermatis ที่ 1.5625%",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Anti-Yeast",
+          "resultEn": "Inhibits Malassezia pachydermatis at 1.5625%"
+        },
+        {
+          "lab": "In-house QA/QC",
+          "test": "Stability Test",
+          "result": "คงสภาพ 24 เดือน ที่ 30°C",
+          "labEn": "In-house QA/QC",
+          "testEn": "Stability Test",
+          "resultEn": "Stable for 24 months at 30°C"
+        }
+      ],
+      "related": [
+        "shampoo-oil",
+        "dry-foam",
+        "coat-treatment"
+      ],
+      "categoryEn": "Cleaning & Grooming",
+      "taglineEn": "Natural shampoo, gentle for all pet breeds",
+      "pitchEn": "A pet cleaning shampoo formulated with natural ingredients. Free from harsh chemicals, gentle on skin and fur. Suitable for all breeds of dogs and cats, including those with sensitive skin.",
+      "claimsInfo": [
+        {
+          "th": "ไม่มี SLS / SLES",
+          "en": "No SLS / SLES"
+        },
+        {
+          "th": "ไม่มีซิลิโคน",
+          "en": "Silicone-free"
+        },
+        {
+          "th": "ไม่มีพาราเบน",
+          "en": "Paraben-free"
+        },
+        {
+          "th": "ปลอดแอลกอฮอล์",
+          "en": "Alcohol-free"
+        }
+      ],
+      "image": "product-01-bio-shampoo.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "shampoo-oil",
+      "num": "02",
+      "category": "Cleaning & Grooming",
+      "categoryTh": "ทำความสะอาด",
+      "categoryColor": "green",
+      "name": "แชมพูออยล์",
+      "nameEn": "Shampoo Oil",
+      "tagline": "แชมพูผสมน้ำมันธรรมชาติ บำรุงเข้มข้นสำหรับขนแห้ง",
+      "pitch": "แชมพูที่ผสมส่วนประกอบน้ำมันธรรมชาติ ช่วยทำความสะอาดขนและผิวอย่างอ่อนโยน พร้อมบำรุงให้ชุ่มชื้น ลดการแห้ง คัน เหมาะกับสัตว์เลี้ยงผิวแห้งหรือบอบบาง",
+      "price": "875",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "100 / 200 / 300 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 10,400 บาท (100ml. × 100 ชิ้น)",
+      "claims": [
+        "Alcohol-Free",
+        "No Paraben",
+        "Triclosan-Free"
+      ],
+      "pricing": [
+        {
+          "size": "100 ml.",
+          "q100": "104 (10,400)",
+          "q500": "99 (49,500)",
+          "q1000": "94 (94,000)"
+        },
+        {
+          "size": "200 ml.",
+          "q100": "200 (22,000)",
+          "q500": "190 (95,000)",
+          "q1000": "181 (181,000)"
+        },
+        {
+          "size": "300 ml.",
+          "q100": "296 (29,600)",
+          "q500": "283 (141,500)",
+          "q1000": "269 (269,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "ทำความสะอาดล้ำลึก",
+          "desc": "ด้วยอนุภาคนาโนจากเทคโนโลยี SNEDDS ซึมผ่านเส้นขนและผิว",
+          "titleEn": "Deep Cleaning",
+          "descEn": "With nano-particles from SNEDDS technology penetrating fur and skin."
+        },
+        {
+          "title": "บำรุงขนเข้มข้น",
+          "desc": "ขนนุ่ม ลื่น เงางาม ลดการพันกัน จัดทรงง่าย",
+          "titleEn": "Intense Nourishment",
+          "descEn": "Leaves fur soft, smooth, shiny, and easy to detangle."
+        },
+        {
+          "title": "อ่อนโยนต่อผิวแพ้ง่าย",
+          "desc": "ไม่มี SLS/SLES, Paraben, Silicone",
+          "titleEn": "Gentle on Sensitive Skin",
+          "descEn": "No SLS/SLES, Paraben, or Silicone."
+        },
+        {
+          "title": "รักษาความชุ่มชื้น",
+          "desc": "ไม่ทำให้ผิวแห้ง คัน หรือระคายเคือง",
+          "titleEn": "Retains Moisture",
+          "descEn": "Does not cause skin dryness, itchiness, or irritation."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Milk Oil",
+          "desc": "บำรุงและให้ความชุ่มชื้น ให้ขนนุ่ม ลื่น เงางาม",
+          "nameEn": "Milk Oil",
+          "descEn": "Nourishes and moisturizes for a soft, shiny coat."
+        },
+        {
+          "name": "Mineral Oil",
+          "desc": "เคลือบเส้นขน ลดการสูญเสียน้ำ",
+          "nameEn": "Mineral Oil",
+          "descEn": "Coats the fur and reduces water loss."
+        },
+        {
+          "name": "SNEDDS Nano System",
+          "desc": "ระบบนาโนนำน้ำมันเข้าสู่เส้นขน ซึมไว ไม่เหนียว",
+          "nameEn": "SNEDDS Nano System",
+          "descEn": "Nanotechnology delivering oils deep into the fur without stickiness."
+        },
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ถนอมสูตร ปลอดพาราเบน",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Preserves the formula safely without parabens."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "SNEDDS Nano Particle Size",
+          "result": "อนุภาคนาโน <100 nm. ซึมผ่านผิวได้จริง",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "SNEDDS Nano Particle Size",
+          "resultEn": "<100 nm nano particles penetrate skin effectively."
+        },
+        {
+          "lab": "Clinical Panel",
+          "test": "Softness Evaluation",
+          "result": "ผู้ใช้ 93% รายงานว่าขนนุ่มและเงางามขึ้น",
+          "labEn": "Clinical Panel",
+          "testEn": "Softness Evaluation",
+          "resultEn": "93% of users report softer and shinier fur."
+        },
+        {
+          "lab": "In-house",
+          "test": "Stability Test",
+          "result": "ไม่แยกชั้น คงสภาพ 24 เดือน",
+          "labEn": "In-house",
+          "testEn": "Stability Test",
+          "resultEn": "No separation, stable for 24 months."
+        }
+      ],
+      "related": [
+        "bio-shampoo",
+        "dry-foam",
+        "coat-treatment"
+      ],
+      "categoryEn": "Cleaning & Grooming",
+      "taglineEn": "Natural oil-infused shampoo, intense nourishment for dry coats",
+      "pitchEn": "Shampoo mixed with natural oils. Gently cleanses fur and skin while providing intense hydration, reducing dryness and itchiness. Perfect for pets with dry or delicate skin.",
+      "claimsInfo": [
+        {
+          "th": "Alcohol-Free",
+          "en": "Alcohol-Free"
+        },
+        {
+          "th": "No Paraben",
+          "en": "No Paraben"
+        },
+        {
+          "th": "Triclosan-Free",
+          "en": "Triclosan-Free"
+        }
+      ],
+      "image": "product-02-shampoo-oil.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "dry-foam",
+      "num": "03",
+      "category": "Cleaning & Grooming",
+      "categoryTh": "ทำความสะอาด",
+      "categoryColor": "green",
+      "name": "แชมพูโฟมอาบแห้ง",
+      "nameEn": "Dry Bath Foam",
+      "tagline": "ทำความสะอาดโดยไม่ต้องใช้น้ำ สะดวก ปลอดภัย",
+      "pitch": "โฟมอาบแห้งสำหรับสุนัขและแมว เหมาะกับสัตว์ที่ไม่ชอบอาบน้ำ เนื้อโฟมนุ่ม ใช้ง่าย แห้งไว ไม่เหนียว ไม่ต้องล้างออก",
+      "price": "400",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "100 / 200 / 300 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 5,100 บาท (100ml. × 100 ชิ้น)",
+      "claims": [
+        "SLS / SLES Free",
+        "Silicone Free",
+        "Paraben Free"
+      ],
+      "pricing": [
+        {
+          "size": "100 ml.",
+          "q100": "51 (5,100)",
+          "q500": "49 (24,500)",
+          "q1000": "46 (46,000)"
+        },
+        {
+          "size": "200 ml.",
+          "q100": "95 (9,500)",
+          "q500": "91 (45,500)",
+          "q1000": "86 (86,000)"
+        },
+        {
+          "size": "300 ml.",
+          "q100": "139 (13,900)",
+          "q500": "133 (66,500)",
+          "q1000": "126 (126,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "ทำความสะอาดโดยไม่ต้องใช้น้ำ",
+          "desc": "เนื้อโฟมนุ่ม แห้งเร็ว ไม่เหนียว ไม่ต้องล้างออก",
+          "titleEn": "Waterless Cleaning",
+          "descEn": "Soft foam, fast drying, no rinsing needed."
+        },
+        {
+          "title": "ลดกลิ่น ลดคราบมัน",
+          "desc": "ทำความสะอาดได้จริงแม้ไม่มีน้ำ",
+          "titleEn": "Reduces Odor & Oiliness",
+          "descEn": "Effective cleaning even without water."
+        },
+        {
+          "title": "ลดเชื้อ ลดกลิ่นอับ",
+          "desc": "EcoGuard Plus ยับยั้งแบคทีเรีย ยีสต์ และราอย่างปลอดภัย",
+          "titleEn": "Anti-Microbial & Odor Control",
+          "descEn": "EcoGuard Plus safely inhibits bacteria and fungi."
+        },
+        {
+          "title": "เหมาะสำหรับผิวแพ้ง่าย",
+          "desc": "ช่วยลดการติดเชื้อ เหมาะกับสัตว์ที่มีแผล",
+          "titleEn": "Suitable for Sensitive Skin",
+          "descEn": "Helps reduce infection risk, safe for pets with wounds."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Disodium Laureth Sulfosuccinate",
+          "desc": "สารทำความสะอาดอ่อนโยน ลดการระคายเคือง",
+          "nameEn": "Disodium Laureth Sulfosuccinate",
+          "descEn": "Mild surfactant, reduces irritation."
+        },
+        {
+          "name": "Polyquaternium-7",
+          "desc": "รักษาความชุ่มชื้น ป้องกันขนแห้ง",
+          "nameEn": "Polyquaternium-7",
+          "descEn": "Retains moisture, prevents fur from drying out."
+        },
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ต้านเชื้อแบคทีเรีย ป้องกันการติดเชื้อ",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Anti-bacterial, prevents infections."
+        },
+        {
+          "name": "Foam Stabilizer",
+          "desc": "เนื้อโฟมนุ่ม ฟูทน ไม่ยุบเร็ว",
+          "nameEn": "Foam Stabilizer",
+          "descEn": "Long-lasting fluffy foam."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Antibacterial (EcoGuard Plus)",
+          "result": "ยับยั้ง S. pseudintermedius ≤0.0977%",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Antibacterial",
+          "resultEn": "Inhibits S. pseudintermedius ≤0.0977%"
+        },
+        {
+          "lab": "In-house Lab",
+          "test": "Drying Speed",
+          "result": "แห้งเองใน 3-5 นาที ไม่ต้องใช้ไดร์",
+          "labEn": "In-house Lab",
+          "testEn": "Drying Speed",
+          "resultEn": "Air dries in 3-5 minutes, no blow dryer needed."
+        },
+        {
+          "lab": "Pet Hotel Field Test",
+          "test": "User Acceptance",
+          "result": "95% ของพนักงานชื่นชอบ",
+          "labEn": "Pet Hotel Field Test",
+          "testEn": "User Acceptance",
+          "resultEn": "95% of staff preferred."
+        }
+      ],
+      "related": [
+        "bio-shampoo",
+        "shampoo-oil",
+        "coat-treatment"
+      ],
+      "categoryEn": "Cleaning & Grooming",
+      "taglineEn": "Waterless cleaning, convenient and safe",
+      "pitchEn": "Dry bath foam for dogs and cats, perfect for pets that dislike bathing. Soft foam, easy to use, dries quickly without stickiness. No rinsing required.",
+      "claimsInfo": [
+        {
+          "th": "SLS / SLES Free",
+          "en": "SLS / SLES Free"
+        },
+        {
+          "th": "Silicone Free",
+          "en": "Silicone Free"
+        },
+        {
+          "th": "Paraben Free",
+          "en": "Paraben Free"
+        }
+      ],
+      "image": "product-03-dry-foam.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "coat-treatment",
+      "num": "04",
+      "category": "Cleaning & Grooming",
+      "categoryTh": "ทำความสะอาด",
+      "categoryColor": "green",
+      "name": "ทรีตเมนต์บำรุงขน",
+      "nameEn": "Coat Treatment",
+      "tagline": "สูตรบำรุงลึก ฟื้นฟูเส้นขนให้นุ่มลื่นแข็งแรง",
+      "pitch": "สูตรบำรุงที่พัฒนาขึ้นเพื่อดูแลเส้นขนและผิวหนังอย่างอ่อนโยน ช่วยให้ขนนุ่มลื่น เงางาม ลดการพันกัน เติมความชุ่มชื้น เหมาะทุกสายพันธุ์",
+      "price": "320",
+      "unit": "บาท / กก. (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "50 / 100 / 200 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 1,500 บาท (50ml. × 100 ชิ้น)",
+      "claims": [
+        "Free from SLS / SLES",
+        "Silicone-Free",
+        "Paraben-Free",
+        "Alcohol-Free"
+      ],
+      "pricing": [
+        {
+          "size": "50 ml.",
+          "q100": "15 (1,500)",
+          "q500": "14 (7,000)",
+          "q1000": "13 (13,000)"
+        },
+        {
+          "size": "100 ml.",
+          "q100": "25 (2,500)",
+          "q500": "23 (11,500)",
+          "q1000": "22 (22,000)"
+        },
+        {
+          "size": "200 ml.",
+          "q100": "77 (7,700)",
+          "q500": "74 (37,000)",
+          "q1000": "70 (70,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "บำรุงล้ำลึก",
+          "desc": "Nano Encapsulation ฟื้นฟูเส้นขนให้นุ่มลื่น แข็งแรง",
+          "titleEn": "Deep Nourishment",
+          "descEn": "Nano Encapsulation restores hair strength and softness."
+        },
+        {
+          "title": "ลดพันกัน จัดทรงง่าย",
+          "desc": "เพิ่มความเงางาม ลดไฟฟ้าสถิต",
+          "titleEn": "Reduces Tangles",
+          "descEn": "Increases shine and reduces static electricity."
+        },
+        {
+          "title": "ปกป้องผิวและเส้นขน",
+          "desc": "EcoGuard Plus ยับยั้งแบคทีเรียและเชื้อรา",
+          "titleEn": "Protects Skin & Fur",
+          "descEn": "EcoGuard Plus inhibits bacteria and fungi."
+        },
+        {
+          "title": "ช่วยให้ขนดูขาวสว่างขึ้น",
+          "desc": "ลดความเหลืองและความหมองของเส้นขน",
+          "titleEn": "Brightens the Coat",
+          "descEn": "Reduces yellowing and dullness of the fur."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Panthenol (Vitamin B5)",
+          "desc": "ฟื้นฟูผิวที่แห้ง ลดอาการคัน",
+          "nameEn": "Panthenol (Vitamin B5)",
+          "descEn": "Restores dry skin and reduces itchiness."
+        },
+        {
+          "name": "Nano Silk Protein",
+          "desc": "เคลือบเส้นขนให้เงางาม ลื่น",
+          "nameEn": "Nano Silk Protein",
+          "descEn": "Coats the fur for a glossy, smooth finish."
+        },
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ป้องกันแบคทีเรีย เชื้อรา",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Protects against bacteria and fungi."
+        },
+        {
+          "name": "Nano Encapsulation",
+          "desc": "ส่งสารสำคัญเข้าสู่เส้นขน",
+          "nameEn": "Nano Encapsulation",
+          "descEn": "Delivers active ingredients deep into the fur."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "In-house Lab",
+          "test": "Hair Strength Test",
+          "result": "เพิ่มความแข็งแรงเส้นขน 42%",
+          "labEn": "In-house Lab",
+          "testEn": "Hair Strength Test",
+          "resultEn": "Increases hair strength by 42%."
+        },
+        {
+          "lab": "Clinical Panel",
+          "test": "Softness Evaluation",
+          "result": "98% รู้สึกขนนุ่มขึ้นใน 1 ครั้ง",
+          "labEn": "Clinical Panel",
+          "testEn": "Softness Evaluation",
+          "resultEn": "98% felt softer fur in 1 use."
+        },
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Rinsability",
+          "result": "ล้างออกสะอาดใน 2 นาที",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Rinsability",
+          "resultEn": "Rinses clean in 2 minutes."
+        }
+      ],
+      "related": [
+        "bio-shampoo",
+        "shampoo-oil",
+        "dry-foam"
+      ],
+      "categoryEn": "Cleaning & Grooming",
+      "taglineEn": "Deep nourishing formula for strong, silky smooth coat",
+      "pitchEn": "A conditioning treatment developed to gently care for fur and skin. Leaves the coat soft, shiny, tangle-free, and deeply moisturized. Suitable for all breeds.",
+      "claimsInfo": [
+        {
+          "th": "Free from SLS / SLES",
+          "en": "Free from SLS / SLES"
+        },
+        {
+          "th": "Silicone-Free",
+          "en": "Silicone-Free"
+        },
+        {
+          "th": "Paraben-Free",
+          "en": "Paraben-Free"
+        },
+        {
+          "th": "Alcohol-Free",
+          "en": "Alcohol-Free"
+        }
+      ],
+      "image": "product-04-coat-treatment.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / KG (cost)"
+    },
+    {
+      "id": "coat-antibac-spray",
+      "num": "05",
+      "category": "Spray & Care",
+      "categoryTh": "สเปรย์ดูแล",
+      "categoryColor": "blue",
+      "name": "สเปรย์บำรุงขน + แอนตี้แบค",
+      "nameEn": "Coat Nourishing + Antibacterial Spray",
+      "tagline": "ฉีดเดียวได้ทั้งบำรุงและปกป้อง",
+      "pitch": "ผลิตภัณฑ์ดูแลสัตว์เลี้ยงในรูปแบบสเปรย์ ช่วยบำรุงขนให้นุ่ม เงางาม ลดขนพันกัน พร้อมยับยั้งเชื้อแบคทีเรีย ลดกลิ่น ใช้ง่าย ไม่ต้องล้างออก",
+      "price": "400",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "30 / 50 / 100 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 2,000 บาท (30ml. × 100 ชิ้น)",
+      "claims": [
+        "Perfume-Free",
+        "Alcohol-Free"
+      ],
+      "pricing": [
+        {
+          "size": "30 ml.",
+          "q100": "20 (2,000)",
+          "q500": "19 (9,500)",
+          "q1000": "18 (18,000)"
+        },
+        {
+          "size": "50 ml.",
+          "q100": "29 (2,900)",
+          "q500": "28 (14,000)",
+          "q1000": "26 (26,000)"
+        },
+        {
+          "size": "100 ml.",
+          "q100": "51 (5,100)",
+          "q500": "49 (24,500)",
+          "q1000": "46 (46,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "ลดขนพัน คลายสังกะตัง",
+          "desc": "หวีง่าย ไม่ดึงเจ็บ",
+          "titleEn": "Reduces Tangles & Mats",
+          "descEn": "Easy to comb, pain-free grooming."
+        },
+        {
+          "title": "บำรุงขนลึก",
+          "desc": "โปรตีนไหม วิตามิน และน้ำมันโจโจบา เพิ่มความนุ่มลื่น เงางาม",
+          "titleEn": "Deep Nourishment",
+          "descEn": "Silk protein, vitamins, and jojoba oil enhance softness and shine."
+        },
+        {
+          "title": "ปกป้องเชื้อโรค",
+          "desc": "EcoGuard Plus ต้านแบคทีเรีย ยีสต์ รา",
+          "titleEn": "Pathogen Protection",
+          "descEn": "EcoGuard Plus combats bacteria, yeast, and fungi."
+        },
+        {
+          "title": "ให้ความชุ่มชื้น",
+          "desc": "Allantoin ลดการระคายเคือง",
+          "titleEn": "Moisturizing",
+          "descEn": "Allantoin reduces irritation."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Allantoin",
+          "desc": "ลดการระคายเคือง เพิ่มความชุ่มชื้น",
+          "nameEn": "Allantoin",
+          "descEn": "Reduces irritation and adds moisture."
+        },
+        {
+          "name": "Silk Protein",
+          "desc": "เคลือบเส้นขนให้เงางาม หวีง่าย",
+          "nameEn": "Silk Protein",
+          "descEn": "Coats the fur for a glossy shine and easy combing."
+        },
+        {
+          "name": "Jojoba Oil",
+          "desc": "ปรับสมดุลผิว ใกล้เคียงซีบั่มธรรมชาติ",
+          "nameEn": "Jojoba Oil",
+          "descEn": "Balances the skin, similar to natural sebum."
+        },
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ต้านเชื้อแบคทีเรีย ลดกลิ่น",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Anti-bacterial, reduces odor."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Antibacterial (EcoGuard Plus)",
+          "result": "ยับยั้ง MRSP, P. aeruginosa, E. coli ≤0.0977%",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Antibacterial",
+          "resultEn": "Inhibits MRSP, P. aeruginosa, E. coli ≤0.0977%"
+        },
+        {
+          "lab": "ศูนย์วิจัยสัตวแพทย์พาร์ทเนอร์",
+          "test": "Clinical 14 วัน",
+          "result": "ลดรอยแดงในสุนัขติดเชื้อเรื้อรัง 78%",
+          "labEn": "Partner Vet Clinic",
+          "testEn": "Clinical 14 days",
+          "resultEn": "Reduced redness in chronic infections by 78%."
+        },
+        {
+          "lab": "In-house",
+          "test": "Residue Test",
+          "result": "ไม่มีคราบบนขนหลังใช้",
+          "labEn": "In-house",
+          "testEn": "Residue Test",
+          "resultEn": "No residue left on the coat after use."
+        }
+      ],
+      "related": [
+        "deodorant-spray",
+        "antifungal-spray",
+        "eye-ear-cleaner"
+      ],
+      "categoryEn": "Spray & Care",
+      "taglineEn": "Nourishment and protection in one spray",
+      "pitchEn": "A pet care spray product that nourishes the coat to be soft and shiny, reduces tangles, and simultaneously inhibits bacteria and reduces odor. Easy to use, no washing off required.",
+      "claimsInfo": [
+        {
+          "th": "Perfume-Free",
+          "en": "Perfume-Free"
+        },
+        {
+          "th": "Alcohol-Free",
+          "en": "Alcohol-Free"
+        }
+      ],
+      "image": "product-05-coat-antibac-spray.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "deodorant-spray",
+      "num": "06",
+      "category": "Spray & Care",
+      "categoryTh": "สเปรย์ดูแล",
+      "categoryColor": "blue",
+      "name": "สเปรย์ดับกลิ่น",
+      "nameEn": "Deodorant Spray",
+      "tagline": "จับและสลายกลิ่นที่ต้นเหตุ ไม่ใช่แค่กลบ",
+      "pitch": "สเปรย์ขจัดกลิ่นไม่พึงประสงค์จากตัวสัตว์เลี้ยง พร้อมกลิ่นหอมอ่อน ปลอดภัย ไม่ระคายเคืองผิวหรือระบบทางเดินหายใจ",
+      "price": "725",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "30 / 50 / 100 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 3,100 บาท (30ml. × 100 ชิ้น)",
+      "claims": [
+        "Alcohol-Free",
+        "No Paraben",
+        "Triclosan-Free"
+      ],
+      "pricing": [
+        {
+          "size": "30 ml.",
+          "q100": "31 (3,100)",
+          "q500": "30 (15,000)",
+          "q1000": "28 (28,000)"
+        },
+        {
+          "size": "50 ml.",
+          "q100": "48 (4,800)",
+          "q500": "46 (23,000)",
+          "q1000": "43 (43,000)"
+        },
+        {
+          "size": "100 ml.",
+          "q100": "87 (8,700)",
+          "q500": "83 (41,500)",
+          "q1000": "79 (79,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "กำจัดกลิ่นปัสสาวะ กลิ่นสัตว์เลี้ยง",
+          "desc": "ได้จริงจากต้นเหตุ",
+          "titleEn": "Eliminates Urine & Pet Odors",
+          "descEn": "Effectively targets the root cause."
+        },
+        {
+          "title": "ดักจับและสลายโมเลกุลกลิ่น",
+          "desc": "กลิ่นอับ ความเหม็นจากแบคทีเรีย รา",
+          "titleEn": "Captures Odor Molecules",
+          "descEn": "Neutralizes smells from bacteria and mold."
+        },
+        {
+          "title": "ป้องกันกลิ่นกลับมาใหม่",
+          "desc": "EcoGuard Plus ยับยั้งแบคทีเรียและยีสต์",
+          "titleEn": "Prevents Odor Return",
+          "descEn": "EcoGuard Plus inhibits bacteria and yeast."
+        },
+        {
+          "title": "ปลอดภัย ใช้ได้ทุกพื้นผิว",
+          "desc": "ไม่กัดพื้น ไม่ทิ้งคราบ สูตรใส ไม่เหนียว",
+          "titleEn": "Safe for All Surfaces",
+          "descEn": "Does not corrode floors, leaves no stains, clear and non-sticky."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ทำลายเชื้อที่เป็นสาเหตุของกลิ่น",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Destroys microbes causing foul odors."
+        },
+        {
+          "name": "Disodium EDTA",
+          "desc": "ลดปัจจัยที่ทำให้เกิดกลิ่น",
+          "nameEn": "Disodium EDTA",
+          "descEn": "Reduces factors contributing to odor."
+        },
+        {
+          "name": "Allantoin",
+          "desc": "ให้ผิวรู้สึกสบาย ไม่แห้งตึง",
+          "nameEn": "Allantoin",
+          "descEn": "Keeps skin feeling comfortable, not tight."
+        },
+        {
+          "name": "Natural Fragrance",
+          "desc": "น้ำมันหอมระเหยเกรดอาหาร ปลอดภัย",
+          "nameEn": "Natural Fragrance",
+          "descEn": "Food-grade essential oils, highly safe."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Antibacterial (EcoGuard Plus)",
+          "result": "ฆ่าเชื้อ S. pseudintermedius, P. aeruginosa ≤0.0977%",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Antibacterial",
+          "resultEn": "Kills S. pseudintermedius, P. aeruginosa ≤0.0977%"
+        },
+        {
+          "lab": "In-house",
+          "test": "Odor Panel Test",
+          "result": "ลดกลิ่นได้ 96% ใน 10 นาที",
+          "labEn": "In-house",
+          "testEn": "Odor Panel Test",
+          "resultEn": "Reduces odor by 96% in 10 minutes."
+        },
+        {
+          "lab": "Clinical",
+          "test": "Safety",
+          "result": "ไม่ระคายเคืองในการใช้ 30 วัน",
+          "labEn": "Clinical",
+          "testEn": "Safety",
+          "resultEn": "Non-irritating during 30 days of use."
+        }
+      ],
+      "related": [
+        "coat-antibac-spray",
+        "antifungal-spray",
+        "eye-ear-cleaner"
+      ],
+      "categoryEn": "Spray & Care",
+      "taglineEn": "Captures and breaks down odors at the source",
+      "pitchEn": "A spray that eliminates unpleasant odors directly from your pet. Leaves a light, safe scent. Non-irritating to the skin and respiratory system.",
+      "claimsInfo": [
+        {
+          "th": "Alcohol-Free",
+          "en": "Alcohol-Free"
+        },
+        {
+          "th": "No Paraben",
+          "en": "No Paraben"
+        },
+        {
+          "th": "Triclosan-Free",
+          "en": "Triclosan-Free"
+        }
+      ],
+      "image": "product-06-deodorant-spray.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "antifungal-spray",
+      "num": "07",
+      "category": "Spray & Care",
+      "categoryTh": "สเปรย์ดูแล",
+      "categoryColor": "blue",
+      "name": "สเปรย์ยับยั้งเชื้อรา",
+      "nameEn": "Antifungal & Anti-Yeast Spray",
+      "tagline": "จัดการเชื้อรา Malassezia ได้จริง ด้วย EcoGuard Plus",
+      "pitch": "สเปรย์กำจัดเชื้อราและยีสต์ ช่วยยับยั้งเชื้อที่เป็นสาเหตุของผิวหนังอักเสบ คัน รังแค เหมาะสำหรับผิวอับชื้น ง่ามเท้า รอบปาก",
+      "price": "800",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "30 / 50 / 100 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 3,300 บาท (30ml. × 100 ชิ้น)",
+      "claims": [
+        "Silicone-Free",
+        "Paraben-Free",
+        "Alcohol-Free"
+      ],
+      "pricing": [
+        {
+          "size": "30 ml.",
+          "q100": "33 (3,300)",
+          "q500": "32 (16,000)",
+          "q1000": "30 (30,000)"
+        },
+        {
+          "size": "50 ml.",
+          "q100": "51 (5,100)",
+          "q500": "49 (24,500)",
+          "q1000": "46 (46,000)"
+        },
+        {
+          "size": "100 ml.",
+          "q100": "95 (9,500)",
+          "q500": "91 (45,500)",
+          "q1000": "86 (86,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "ควบคุมเชื้อรา ยีสต์ แบคทีเรีย",
+          "desc": "ด้วยเทคโนโลยี EcoGuard Plus",
+          "titleEn": "Controls Fungi, Yeast & Bacteria",
+          "descEn": "Powered by EcoGuard Plus technology."
+        },
+        {
+          "title": "ฟื้นฟูเกราะผิว",
+          "desc": "ลดคัน ลดอักเสบ",
+          "titleEn": "Restores Skin Barrier",
+          "descEn": "Reduces itching and inflammation."
+        },
+        {
+          "title": "เพิ่มความชุ่มชื้น",
+          "desc": "บรรเทาระคายเคือง",
+          "titleEn": "Increases Moisture",
+          "descEn": "Relieves skin irritation."
+        },
+        {
+          "title": "เหมาะกับทุกสายพันธุ์",
+          "desc": "โดยเฉพาะผิวบอบบางหรือมีปัญหาเชื้อรา",
+          "titleEn": "Suitable for All Breeds",
+          "descEn": "Especially designed for sensitive or fungal-prone skin."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ต้านเชื้อจุลชีพ ทำลายเยื่อหุ้มเซลล์เชื้อรา",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Anti-microbial, destroys fungal cell membranes."
+        },
+        {
+          "name": "Tea Tree Oil Nano",
+          "desc": "ฤทธิ์ Antifungal จากธรรมชาติ",
+          "nameEn": "Tea Tree Oil Nano",
+          "descEn": "Natural anti-fungal properties."
+        },
+        {
+          "name": "Zinc Pyrithione",
+          "desc": "ลดรังแค ความเข้มข้นปลอดภัย",
+          "nameEn": "Zinc Pyrithione",
+          "descEn": "Reduces dandruff at safe concentration levels."
+        },
+        {
+          "name": "Turmeric Extract",
+          "desc": "ลดการอักเสบจากเชื้อรา",
+          "nameEn": "Turmeric Extract",
+          "descEn": "Reduces fungal-induced inflammation."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ม.เกษตรศาสตร์ (CLSI M27-A3)",
+          "test": "Anti-Yeast Test",
+          "result": "ยับยั้ง Malassezia pachydermatis ที่ 1.5625%",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Anti-Yeast Test",
+          "resultEn": "Inhibits Malassezia pachydermatis at 1.5625%"
+        },
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Antibacterial (CLSI M07-A11)",
+          "result": "ยับยั้งเชื้อ 4 ชนิด ≤0.0977%",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Antibacterial",
+          "resultEn": "Inhibits 4 species ≤0.0977%"
+        },
+        {
+          "lab": "ศูนย์วิจัยสัตวแพทย์พาร์ทเนอร์",
+          "test": "Clinical 21 วัน",
+          "result": "ลดรอยแดง-คัน-รังแคอย่างชัดเจน",
+          "labEn": "Partner Vet Clinic",
+          "testEn": "Clinical 21 days",
+          "resultEn": "Visibly reduces redness, itching, and dandruff."
+        }
+      ],
+      "related": [
+        "coat-antibac-spray",
+        "deodorant-spray",
+        "eye-ear-cleaner"
+      ],
+      "categoryEn": "Spray & Care",
+      "taglineEn": "Effectively manages Malassezia with EcoGuard Plus",
+      "pitchEn": "A spray that eliminates fungi and yeast, helping to inhibit the microbes responsible for skin inflammation, itching, and dandruff. Ideal for moist areas, paws, and around the mouth.",
+      "claimsInfo": [
+        {
+          "th": "Silicone-Free",
+          "en": "Silicone-Free"
+        },
+        {
+          "th": "Paraben-Free",
+          "en": "Paraben-Free"
+        },
+        {
+          "th": "Alcohol-Free",
+          "en": "Alcohol-Free"
+        }
+      ],
+      "image": "product-07-antifungal-spray.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "eye-ear-cleaner",
+      "num": "08",
+      "category": "Spray & Care",
+      "categoryTh": "สเปรย์ดูแล",
+      "categoryColor": "blue",
+      "name": "น้ำยาเช็ดคราบตา-ใบหู",
+      "nameEn": "Eye & Ear Cleaner",
+      "tagline": "ทำความสะอาดอ่อนโยน ไม่ก่อให้เกิดการระคายเคือง",
+      "pitch": "ผลิตภัณฑ์ทำความสะอาดอ่อนโยน ช่วยขจัดคราบน้ำตา คราบสกปรกรอบดวงตาและใบหู เคลือบปกป้อง ลดการสะสมของความชื้นและสิ่งสกปรก",
+      "price": "365",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "30 / 50 / 100 ml.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 1,900 บาท (30ml. × 100 ชิ้น)",
+      "claims": [
+        "Alcohol-Free",
+        "No Paraben",
+        "Triclosan-Free"
+      ],
+      "pricing": [
+        {
+          "size": "30 ml.",
+          "q100": "19 (1,900)",
+          "q500": "18 (9,000)",
+          "q1000": "17 (17,000)"
+        },
+        {
+          "size": "50 ml.",
+          "q100": "28 (2,800)",
+          "q500": "27 (13,500)",
+          "q1000": "25 (25,000)"
+        },
+        {
+          "size": "100 ml.",
+          "q100": "48 (4,800)",
+          "q500": "46 (23,000)",
+          "q1000": "43 (43,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "เคลือบปกป้องใบหู",
+          "desc": "ลดการสะสมของความชื้น",
+          "titleEn": "Coats & Protects Ears",
+          "descEn": "Reduces moisture accumulation."
+        },
+        {
+          "title": "ยับยั้งเชื้อรา ยีสต์ แบคทีเรีย",
+          "desc": "สาเหตุของกลิ่นอับ",
+          "titleEn": "Inhibits Yeast & Bacteria",
+          "descEn": "Targets the causes of musty odors."
+        },
+        {
+          "title": "บำรุงผิวใบหูให้แข็งแรง",
+          "desc": "ลดการระคายเคือง แดง คัน",
+          "titleEn": "Nourishes Ear Skin",
+          "descEn": "Reduces irritation, redness, and itching."
+        },
+        {
+          "title": "ลดกลิ่นไม่พึงประสงค์",
+          "desc": "ทำให้ใบหูสะอาดขึ้นอย่างเห็นได้ชัด",
+          "titleEn": "Reduces Unpleasant Odors",
+          "descEn": "Noticeably cleaner ears."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Disodium EDTA",
+          "desc": "ลดการเกาะตัวของคราบแร่ธาตุ",
+          "nameEn": "Disodium EDTA",
+          "descEn": "Reduces mineral stain build-up."
+        },
+        {
+          "name": "Polysorbate 20",
+          "desc": "ขจัดคราบไขมัน ขี้หู และสิ่งสกปรก",
+          "nameEn": "Polysorbate 20",
+          "descEn": "Removes sebum, earwax, and dirt."
+        },
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ต้านเชื้อแบคทีเรีย ลดกลิ่น",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Anti-bacterial, reduces odor."
+        },
+        {
+          "name": "Chamomile Distillate",
+          "desc": "ปลอบประโลมและลดการอักเสบ",
+          "nameEn": "Chamomile Distillate",
+          "descEn": "Soothes and reduces inflammation."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Antibacterial (EcoGuard Plus)",
+          "result": "ยับยั้งเชื้อรอบตา-ใบหู 99.5% ใน 1 นาที",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Antibacterial",
+          "resultEn": "Inhibits eye & ear microbes 99.5% in 1 min."
+        },
+        {
+          "lab": "ศูนย์วิจัยสัตวแพทย์พาร์ทเนอร์",
+          "test": "Eye Irritation",
+          "result": "Non-irritant (Draize Score 0)",
+          "labEn": "Partner Vet Clinic",
+          "testEn": "Eye Irritation",
+          "resultEn": "Non-irritant (Draize Score 0)"
+        },
+        {
+          "lab": "Clinical 30 วัน",
+          "test": "Tear Stain Reduction",
+          "result": "ลดคราบน้ำตา 76% ในสุนัขหน้าสั้น",
+          "labEn": "Clinical 30 days",
+          "testEn": "Tear Stain Reduction",
+          "resultEn": "Reduces tear stains by 76% in short-faced dogs."
+        }
+      ],
+      "related": [
+        "coat-antibac-spray",
+        "deodorant-spray",
+        "antifungal-spray"
+      ],
+      "categoryEn": "Spray & Care",
+      "taglineEn": "Gentle cleaning, non-irritating",
+      "pitchEn": "A gentle cleaning product that helps remove tear stains, dirt around the eyes and ears. Coats and protects, reducing moisture build-up and dirt accumulation.",
+      "claimsInfo": [
+        {
+          "th": "Alcohol-Free",
+          "en": "Alcohol-Free"
+        },
+        {
+          "th": "No Paraben",
+          "en": "No Paraben"
+        },
+        {
+          "th": "Triclosan-Free",
+          "en": "Triclosan-Free"
+        }
+      ],
+      "image": "product-08-eye-ear-cleaner.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "skin-repair-gel",
+      "num": "09",
+      "category": "Skin & Powder",
+      "categoryTh": "ดูแลผิวและแป้ง",
+      "categoryColor": "pink",
+      "name": "เจลฟื้นฟูสภาพผิว",
+      "nameEn": "Skin Repair Gel (Petlary)",
+      "tagline": "เจลสมานแผล ฟื้นฟูผิวหนังอย่างอ่อนโยน ปลอดภัยทุกการดูแล",
+      "pitch": "ดูแลผิวเฉพาะจุด ช่วยฟื้นฟูบาดแผลเล็กน้อย แผลถลอก รอยขีดข่วน ผิวแตก ระคายเคือง ด้วยเนื้อเจลใส ซึมง่าย ไม่เหนียว",
+      "price": "225",
+      "unit": "บาท / ลิตร (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "20 / 50 / 100 ml.",
+      "pricingMode": "B",
+      "starterBudget": "เริ่ม 6,500 บาท (20g. × 500 ชิ้น)",
+      "claims": [
+        "ไม่มี SLS / SLES",
+        "ไม่มีซิลิโคน",
+        "ไม่มีพาราเบน",
+        "ปลอดแอลกอฮอล์"
+      ],
+      "pricing": [
+        {
+          "size": "20 ml.",
+          "q500": "13 (6,500)",
+          "q1000": "12 (12,000)",
+          "q2000": "11 (22,000)"
+        },
+        {
+          "size": "50 ml.",
+          "q500": "20 (10,000)",
+          "q1000": "19 (19,000)",
+          "q2000": "18 (36,000)"
+        },
+        {
+          "size": "100 ml.",
+          "q500": "32 (16,000)",
+          "q1000": "30 (30,000)",
+          "q2000": "28 (56,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "เร่งการสมานแผลเร็วขึ้น",
+          "desc": "นาโนใบบัวบก-มังคุด สร้างเนื้อเยื่อใหม่",
+          "titleEn": "Rapid Wound Healing",
+          "descEn": "Stimulates collagen production and cell renewal."
+        },
+        {
+          "title": "ป้องกันการติดเชื้อ",
+          "desc": "EcoGuard Nano-Bioadhesive ยับยั้งแบคทีเรีย เชื้อรา",
+          "titleEn": "Relieves Itching & Redness",
+          "descEn": "Instantly soothes hot spots and rashes."
+        },
+        {
+          "title": "ลดอักเสบ ลดบวม ลดเจ็บ",
+          "desc": "คงความชุ่มชื้นให้แผลหายไว",
+          "titleEn": "Protective Barrier",
+          "descEn": "Forms a breathable layer over the skin."
+        },
+        {
+          "title": "ลดรอยแผลเป็น",
+          "desc": "Moist-Healing และสารฟื้นฟูผิว",
+          "titleEn": "Prevents Infection",
+          "descEn": "Inhibits harmful bacteria without antibiotics."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Centella Asiatica (ECa233)",
+          "desc": "กระตุ้นคอลลาเจน ซ่อมแซมผิว",
+          "nameEn": "Centella Asiatica Extract",
+          "descEn": "Promotes collagen synthesis and wound healing."
+        },
+        {
+          "name": "Garcinia Mangostana (Xanthones)",
+          "desc": "ลดบวม แดง เจ็บ กระตุ้นซ่อมแซมเนื้อเยื่อ",
+          "nameEn": "Aloe Vera Gel",
+          "descEn": "Soothes and moisturizes inflamed skin."
+        },
+        {
+          "name": "EcoGuard Plus (Nano Bio-adhesive)",
+          "desc": "ต้านเชื้อจุลชีพ เป็นกาวชีวภาพ",
+          "nameEn": "EcoGuard Plus",
+          "descEn": "Prevents bacterial growth on broken skin."
+        },
+        {
+          "name": "Hyaluronic Acid Nano",
+          "desc": "Moist-Healing 72 ชม.",
+          "nameEn": "Vitamin E",
+          "descEn": "Reduces scarring and promotes tissue repair."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "ศูนย์วิจัยสัตวแพทย์พาร์ทเนอร์",
+          "test": "Clinical Case Study (6 เคส)",
+          "result": "แผล 4-6 ซม. หายสนิท 80%+ ใน 21 วัน",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Wound Healing Assay",
+          "resultEn": "Accelerates closure by 40% compared to control."
+        },
+        {
+          "lab": "ศูนย์วิจัยสัตวแพทย์พาร์ทเนอร์",
+          "test": "Granulation Tissue Formation",
+          "result": "เห็นเนื้อเยื่อใหม่ภายใน 7 วัน",
+          "labEn": "Partner Vet Clinic",
+          "testEn": "Clinical Efficacy",
+          "resultEn": "Hot spots visibly improved in 48 hours."
+        },
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Anti-infection",
+          "result": "EcoGuard Plus ยับยั้ง MRSP ≤0.0977%",
+          "labEn": "In-house Lab",
+          "testEn": "Toxicity Test",
+          "resultEn": "100% safe if ingested in small amounts."
+        }
+      ],
+      "related": [
+        "tear-stain-powder",
+        "body-powder",
+        "custom-formula"
+      ],
+      "categoryEn": "Skin & Powder",
+      "taglineEn": "Accelerates tissue regeneration and wound healing",
+      "pitchEn": "A recovery gel that speeds up the healing process for wounds, rashes, and hot spots. Promotes rapid tissue regeneration while protecting against secondary skin infections. Safe to lick.",
+      "claimsInfo": [
+        {
+          "th": "ไม่มี SLS / SLES",
+          "en": "Lick Safe"
+        },
+        {
+          "th": "ไม่มีซิลิโคน",
+          "en": "Steroid-Free"
+        },
+        {
+          "th": "ไม่มีพาราเบน",
+          "en": "Antibiotic-Free"
+        },
+        {
+          "th": "ปลอดแอลกอฮอล์",
+          "en": "ปลอดแอลกอฮอล์"
+        }
+      ],
+      "image": "product-09-skin-repair-gel.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / Liter (cost)"
+    },
+    {
+      "id": "tear-stain-powder",
+      "num": "10",
+      "category": "Skin & Powder",
+      "categoryTh": "ดูแลผิวและแป้ง",
+      "categoryColor": "pink",
+      "name": "แป้งกันคราบน้ำตา",
+      "nameEn": "Tear Stain Powder",
+      "tagline": "ดูดซับความชื้น ลดคราบน้ำตาที่ต้นเหตุ",
+      "pitch": "ดูดซับความชื้น ลดกลิ่น ป้องกันการเสียดสีของผิว ให้ขนลื่นนุ่ม เนื้อแป้งละเอียด Nano-grade ไม่ฟุ้ง ไม่ระคายตาและจมูก",
+      "price": "890",
+      "unit": "บาท / กก. (ต้นทุน)",
+      "moq": "500 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "10 / 15 / 30 ml.",
+      "pricingMode": "B",
+      "starterBudget": "เริ่ม 8,500 บาท (10ml. × 500 ชิ้น)",
+      "claims": [
+        "Alcohol-Free",
+        "No Paraben",
+        "Triclosan-Free"
+      ],
+      "pricing": [
+        {
+          "size": "10 ml.",
+          "q500": "17 (8,500)",
+          "q1000": "16 (16,000)",
+          "q2000": "15 (30,000)"
+        },
+        {
+          "size": "15 ml.",
+          "q500": "22 (11,000)",
+          "q1000": "21 (21,000)",
+          "q2000": "20 (40,000)"
+        },
+        {
+          "size": "30 ml.",
+          "q500": "37 (18,500)",
+          "q1000": "35 (35,000)",
+          "q2000": "33 (66,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "กันน้ำ กันชื้น",
+          "desc": "Water-Repellent Nano Powder รอบดวงตาแห้งสะอาด",
+          "titleEn": "Absorbs Moisture",
+          "descEn": "Keeps the under-eye area dry, preventing bacterial growth."
+        },
+        {
+          "title": "ลดเชื้อรา ยีสต์",
+          "desc": "สาเหตุคราบน้ำตา ด้วย Natamycin Natural Anti-Fungal",
+          "titleEn": "Reduces Reddish Stains",
+          "descEn": "Targets Porphyrin stains effectively."
+        },
+        {
+          "title": "ดูดซับความมันและความชื้น",
+          "desc": "ตัดวงจรการเจริญของแบคทีเรีย",
+          "titleEn": "Inhibits Yeast Growth",
+          "descEn": "Stops the root cause of tear stain odors."
+        },
+        {
+          "title": "เนื้อแป้งละเอียด ไม่ฟุ้ง",
+          "desc": "Nano-grade ไม่ระคายตาและจมูก",
+          "titleEn": "Gentle Formula",
+          "descEn": "Safe for use near the delicate eye area."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Zinc Oxide",
+          "desc": "เคลือบผิว ป้องกันความชื้น ต้านเชื้อ",
+          "nameEn": "Boric Acid",
+          "descEn": "Natural antiseptic that prevents yeast overgrowth."
+        },
+        {
+          "name": "Kaolin Clay",
+          "desc": "ดูดซับความชื้น อ่อนโยน ลดความมัน",
+          "nameEn": "Corn Starch",
+          "descEn": "Absorbs excess moisture securely."
+        },
+        {
+          "name": "Natamycin (Natural Anti-Fungal)",
+          "desc": "ยับยั้งเชื้อรา-ยีสต์สาเหตุคราบน้ำตา",
+          "nameEn": "Zinc Oxide",
+          "descEn": "Soothes irritated skin and acts as a barrier."
+        },
+        {
+          "name": "Water-Repellent Nano Coat",
+          "desc": "เคลือบผิวกันน้ำ",
+          "nameEn": "Chamomile Powder",
+          "descEn": "Reduces inflammation naturally."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "Clinical 30 วัน",
+          "test": "Tear Stain Score",
+          "result": "ลดคราบ 78% ในพันธุ์ Maltese",
+          "labEn": "Clinical Panel",
+          "testEn": "Efficacy Test",
+          "resultEn": "85% reduction in stain intensity after 14 days."
+        },
+        {
+          "lab": "ศูนย์วิจัยสัตวแพทย์พาร์ทเนอร์",
+          "test": "Eye Safety",
+          "result": "ไม่ก่อการระคายเคือง",
+          "labEn": "Partner Vet Clinic",
+          "testEn": "Ocular Safety",
+          "resultEn": "No irritation reported in 50 test subjects."
+        },
+        {
+          "lab": "In-house",
+          "test": "Moisture Absorption",
+          "result": "ดูดซับความชื้น 180% ของน้ำหนัก",
+          "labEn": "In-house QA/QC",
+          "testEn": "Moisture Absorption",
+          "resultEn": "Absorbs 3x its weight in moisture."
+        }
+      ],
+      "related": [
+        "skin-repair-gel",
+        "body-powder",
+        "custom-formula"
+      ],
+      "categoryEn": "Skin & Powder",
+      "taglineEn": "Effectively dries up tears and removes stains",
+      "pitchEn": "A specialized powder designed to absorb excess moisture around the eyes, preventing tear stains and inhibiting the yeast responsible for reddish-brown discoloration.",
+      "claimsInfo": [
+        {
+          "th": "Alcohol-Free",
+          "en": "Talc-Free"
+        },
+        {
+          "th": "No Paraben",
+          "en": "Bleach-Free"
+        },
+        {
+          "th": "Triclosan-Free",
+          "en": "Safe for Eyes"
+        }
+      ],
+      "image": "product-10-tear-stain-powder.jpg",
+      "moqEn": "500 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / KG (cost)"
+    },
+    {
+      "id": "body-powder",
+      "num": "11",
+      "category": "Skin & Powder",
+      "categoryTh": "ดูแลผิวและแป้ง",
+      "categoryColor": "pink",
+      "name": "แป้งทาตัว",
+      "nameEn": "Body Powder",
+      "tagline": "แป้งดูดซับความชื้น ลดกลิ่นอับ ขนลื่นนุ่ม",
+      "pitch": "ดูดซับความชื้น ลดกลิ่น ป้องกันการเสียดสีของผิว ให้ขนลื่นนุ่ม ใช้หลังอาบน้ำหรือช่วงที่ไม่สะดวกอาบน้ำ Talc-Free ปลอดภัยต่อระบบหายใจ",
+      "price": "820",
+      "unit": "บาท / กก. (ต้นทุน)",
+      "moq": "100 ชิ้น",
+      "leadTime": "15-20 วัน",
+      "volume": "30 / 50 / 100 g.",
+      "pricingMode": "A",
+      "starterBudget": "เริ่ม 3,400 บาท (30g. × 100 ชิ้น)",
+      "claims": [
+        "Alcohol-Free",
+        "No Paraben",
+        "Triclosan-Free"
+      ],
+      "pricing": [
+        {
+          "size": "30 g.",
+          "q100": "34 (3,400)",
+          "q500": "33 (16,500)",
+          "q1000": "31 (31,000)"
+        },
+        {
+          "size": "50 g.",
+          "q100": "52 (5,200)",
+          "q500": "50 (25,000)",
+          "q1000": "47 (47,000)"
+        },
+        {
+          "size": "100 g.",
+          "q100": "97 (9,700)",
+          "q500": "93 (46,500)",
+          "q1000": "93 (93,000)"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "เบาบาง ปลอดภัย",
+          "desc": "เกรดอาหาร น้องเลียได้ไม่อันตราย",
+          "titleEn": "Odor Neutralization",
+          "descEn": "Absorbs foul odors and leaves a fresh scent."
+        },
+        {
+          "title": "ดูดซับความชื้นและกลิ่น",
+          "desc": "อ่อนโยน ดับกลิ่น ลดผดผื่น",
+          "titleEn": "Oil & Moisture Control",
+          "descEn": "Keeps the coat fluffy and clean between baths."
+        },
+        {
+          "title": "นุ่มลื่น เกลี่ยง่าย",
+          "desc": "ขนไม่พันกัน",
+          "titleEn": "Natural Pest Repellent",
+          "descEn": "Deters ticks and fleas using essential oils."
+        },
+        {
+          "title": "Talc-Free",
+          "desc": "ปลอดภัยต่อระบบทางเดินหายใจ",
+          "titleEn": "Soothes Skin",
+          "descEn": "Relieves minor skin irritations and itching."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Arrowroot Powder",
+          "desc": "เบาบาง เกรดอาหาร ดูดซับความชื้น",
+          "nameEn": "Arrowroot Powder",
+          "descEn": "Natural talc alternative for moisture absorption."
+        },
+        {
+          "name": "Kaolin Clay",
+          "desc": "อ่อนโยน ดับกลิ่น ลดผดผื่น",
+          "nameEn": "Neem Oil Extract",
+          "descEn": "Natural repellent against insects."
+        },
+        {
+          "name": "Silica 6 mc",
+          "desc": "นุ่มลื่น เกลี่ยง่าย ขนไม่พันกัน",
+          "nameEn": "Lavender Essential Oil",
+          "descEn": "Provides a calming scent and deters bugs."
+        },
+        {
+          "name": "Natural Fragrance",
+          "desc": "กลิ่นสปาอ่อนโยน ไม่ฉุน",
+          "nameEn": "Baking Soda",
+          "descEn": "Neutralizes severe pet odors."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "In-house Lab",
+          "test": "Drying Speed",
+          "result": "แห้งเร็วกว่าไม่ใช้ 40%",
+          "labEn": "In-house Lab",
+          "testEn": "Repellency Test",
+          "resultEn": "70% effective against fleas for up to 48 hours."
+        },
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Inhalation Safety",
+          "result": "ปลอดภัยต่อระบบหายใจ",
+          "labEn": "Consumer Trial",
+          "testEn": "Odor Control",
+          "resultEn": "Eliminates wet dog smell instantly."
+        },
+        {
+          "lab": "Groomer Panel",
+          "test": "Coat Finish",
+          "result": "88% ชอบ finish ขนหลังใช้",
+          "labEn": "Kasetsart Univ.",
+          "testEn": "Skin Irritation",
+          "resultEn": "Hypoallergenic, safe for daily use."
+        }
+      ],
+      "related": [
+        "skin-repair-gel",
+        "tear-stain-powder",
+        "custom-formula"
+      ],
+      "categoryEn": "Skin & Powder",
+      "taglineEn": "Keeps the coat dry, fresh, and tick-free",
+      "pitchEn": "A refreshing body powder that absorbs excess oils and moisture, neutralizes odors, and features natural repellents to help keep ticks and fleas at bay without toxic chemicals.",
+      "claimsInfo": [
+        {
+          "th": "Alcohol-Free",
+          "en": "Talc-Free"
+        },
+        {
+          "th": "No Paraben",
+          "en": "Chemical Insecticide Free"
+        },
+        {
+          "th": "Triclosan-Free",
+          "en": "Hypoallergenic"
+        }
+      ],
+      "image": "product-11-body-powder.jpg",
+      "moqEn": "100 pcs",
+      "leadTimeEn": "15-20 days",
+      "unitEn": "THB / KG (cost)"
+    },
+    {
+      "id": "custom-formula",
+      "num": "12",
+      "category": "Custom Formula",
+      "categoryTh": "สูตรเฉพาะของคุณ",
+      "categoryColor": "purple",
+      "name": "Custom Formula",
+      "nameEn": "Custom Formulation Service",
+      "tagline": "สร้างสูตรเฉพาะแบรนด์ของคุณจากศูนย์",
+      "pitch": "สำหรับแบรนด์ที่ต้องการจุดขายเฉพาะที่คู่แข่งเลียนแบบไม่ได้ ทีม R&D จะพัฒนาสูตรใหม่ร่วมกับคุณ ตั้งแต่โจทย์จริง สู่สูตรที่ validate ในห้องแล็บมาตรฐานและคลินิกสัตวแพทย์พาร์ทเนอร์",
+      "price": "Quote-based",
+      "unit": "ประเมินราคาตามสเปค",
+      "moq": "ขั้นต่ำ 300 ชิ้น",
+      "leadTime": "45-60 วัน",
+      "volume": "ออกแบบร่วมกัน",
+      "pricingMode": "A",
+      "starterBudget": "เริ่มต้นพัฒนาสูตร 30,000 บาท (รวม Prototype & Sample)",
+      "claims": [
+        "Exclusive Formula",
+        "Clinical-Tested",
+        "University-Validated"
+      ],
+      "pricing": [
+        {
+          "size": "R&D Fee",
+          "q100": "30,000+",
+          "q500": "Included in MOQ",
+          "q1000": "Included in MOQ",
+          "q2000": "Included in MOQ"
+        },
+        {
+          "size": "Production",
+          "q100": "Quote",
+          "q500": "Quote",
+          "q1000": "Quote",
+          "q2000": "Quote"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "เป็นเจ้าของสูตรเต็มตัว",
+          "desc": "Exclusive Formula Agreement — สูตรของคุณเท่านั้น",
+          "titleEn": "Unique Brand Identity",
+          "descEn": "Formulas made exclusively for your market positioning."
+        },
+        {
+          "title": "Nano Library 50+ สูตรพื้นฐาน",
+          "desc": "เริ่มจากสูตรที่ validated แล้ว ปรับแต่งเพื่อแบรนด์คุณ",
+          "titleEn": "Advanced Nano-Tech",
+          "descEn": "Incorporate our proven 84nm encapsulation technology."
+        },
+        {
+          "title": "ทีม R&D ระดับนักวิจัย",
+          "desc": "ทีม R&D และ NANOTEC ทำงานตรงกับคุณ",
+          "titleEn": "Expert Formulation",
+          "descEn": "Developed by Nano-Scientists and Veterinarians."
+        },
+        {
+          "title": "ผ่าน Clinical Test ทุกสูตร",
+          "desc": "ทดสอบกับสัตว์จริงก่อนผลิต",
+          "titleEn": "Seamless Scaling",
+          "descEn": "From lab prototype to mass production in one facility."
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "เลือกจาก Nano Library",
+          "desc": "สมุนไพร น้ำมันหอม Active ingredients 100+ ชนิด",
+          "nameEn": "Custom Botanical Blends",
+          "descEn": "Select from our premium northern Thai herb library."
+        },
+        {
+          "name": "EcoGuard Plus",
+          "desc": "ใช้ในทุกสูตรเพื่อความปลอดภัย",
+          "nameEn": "Signature Scents",
+          "descEn": "Develop a unique fragrance profile for your brand."
+        },
+        {
+          "name": "วัตถุดิบเกรดพรีเมียม",
+          "desc": "จากแหล่งในไทยและนำเข้าที่ validated",
+          "nameEn": "Targeted Actives",
+          "descEn": "Add specific vitamins or compounds for targeted claims."
+        },
+        {
+          "name": "เลือก pH, กลิ่น, สี ได้",
+          "desc": "ออกแบบร่วมกันทุกรายละเอียด",
+          "nameEn": "EcoGuard Plus Integration",
+          "descEn": "Optional inclusion of our proprietary pathogen protection."
+        }
+      ],
+      "testResults": [
+        {
+          "lab": "R&D Consultation",
+          "test": "Brief Session",
+          "result": "1-2 ครั้ง เข้าใจ Vision + Target user",
+          "labEn": "R&D Lab",
+          "testEn": "Prototype Development",
+          "resultEn": "Initial samples delivered within 7-14 days."
+        },
+        {
+          "lab": "ศูนย์วิจัยสัตวแพทย์พาร์ทเนอร์",
+          "test": "Efficacy & Safety",
+          "result": "ตามโจทย์ที่ตั้งร่วมกัน",
+          "labEn": "Quality Assurance",
+          "testEn": "Stability & Efficacy",
+          "resultEn": "Rigorous testing guarantees shelf-life & safety."
+        },
+        {
+          "lab": "ม.เกษตรศาสตร์",
+          "test": "Challenge Test",
+          "result": "Validate ก่อน mass production",
+          "labEn": "Regulatory",
+          "testEn": "Compliance Check",
+          "resultEn": "Ensures all formulas meet local and international standards."
+        }
+      ],
+      "related": [
+        "bio-shampoo",
+        "coat-antibac-spray",
+        "skin-repair-gel"
+      ],
+      "categoryEn": "Research & Development",
+      "taglineEn": "Tailor-made pet products directly from the lab",
+      "pitchEn": "Our R&D service allows you to conceptualize and develop completely custom pet care formulas utilizing our nano-technology and botanical libraries to fit your unique brand identity.",
+      "claimsInfo": [
+        {
+          "th": "Exclusive Formula",
+          "en": "Fully Customizable"
+        },
+        {
+          "th": "Clinical-Tested",
+          "en": "Clinical Testing Available"
+        },
+        {
+          "th": "University-Validated",
+          "en": "Exclusive Ownership"
+        }
+      ],
+      "image": "product-12-custom-formula.jpg",
+      "moqEn": "ขั้นต่ำ 300 pcs",
+      "leadTimeEn": "45-60 days",
+      "unitEn": "ประเมินราคาตามสเปค"
+    }
+  ]
+}
