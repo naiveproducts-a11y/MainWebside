@@ -1,0 +1,213 @@
+{
+  "section": {
+    "eyebrow": "CERTIFIED & TRUSTED BY",
+    "title": "การันตีด้วยมาตรฐานสากล และเครือข่ายสถาบันชั้นนำ",
+    "subtitle": "ผลิตภัณฑ์ของเราผ่านการทดสอบ วิจัยร่วม และได้รับการรับรองจากองค์กรระดับประเทศและนานาชาติ"
+  },
+  "rows": [
+    {
+      "id": "standards",
+      "label": "มาตรฐานและการรับรองผลิตภัณฑ์",
+      "logos": [
+        {
+          "order": 1,
+          "file": "FDA_Thailand.png",
+          "alt": "อย. FDA ไทย",
+          "name": "อย. (FDA ไทย)",
+          "note": null,
+          "displaySize": 104
+        },
+        {
+          "order": 2,
+          "file": "FDA_APPROVED_badge.png",
+          "alt": "FDA Approved",
+          "name": "FDA (US) Food-Grade",
+          "note": "EcoGuard Plus",
+          "displaySize": 90
+        },
+        {
+          "order": 3,
+          "file": "NIA_national_innovation_agency.png",
+          "alt": "NIA",
+          "name": "NIA สำนักงานนวัตกรรมแห่งชาติ",
+          "note": null,
+          "displaySize": 80
+        },
+        {
+          "order": 4,
+          "file": "EFSA_european_food_safety.png",
+          "alt": "EFSA",
+          "name": "EFSA (EU) Food-Grade",
+          "note": "EcoGuard Plus",
+          "displaySize": 72
+        },
+        {
+          "order": 5,
+          "file": "TCELS_thailand_center.png",
+          "alt": "TCELS",
+          "name": "TCELS",
+          "note": null,
+          "displaySize": 64
+        },
+        {
+          "order": 6,
+          "file": "TED_fund.png",
+          "alt": "TED Fund",
+          "name": "TED Fund",
+          "note": null,
+          "displaySize": 58
+        },
+        {
+          "order": 7,
+          "file": "FiAsia_Thailand_innovation.png",
+          "alt": "Fi Asia",
+          "name": "Fi Asia Innovation Zone",
+          "note": null,
+          "displaySize": 52
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "label": "พาร์ทเนอร์ · สถาบันวิจัย · หน่วยงานที่ร่วมมือ",
+      "logos": [
+        {
+          "order": 1,
+          "file": "CU_chulalongkorn_university_pink.png",
+          "alt": "Chulalongkorn",
+          "name": "จุฬาลงกรณ์มหาวิทยาลัย",
+          "note": null,
+          "displaySize": 104
+        },
+        {
+          "order": 2,
+          "file": "CUVET_veterinary_science_CU.png",
+          "alt": "CUVET",
+          "name": "CUVET จุฬาฯ",
+          "note": null,
+          "displaySize": 90
+        },
+        {
+          "order": 3,
+          "file": "KU_kasetsart_university.png",
+          "alt": "KU",
+          "name": "ม.เกษตรศาสตร์",
+          "note": null,
+          "displaySize": 86
+        },
+        {
+          "order": 4,
+          "file": "CMU_chiangmai_university.png",
+          "alt": "CMU",
+          "name": "ม.เชียงใหม่",
+          "note": null,
+          "displaySize": 82
+        },
+        {
+          "order": 5,
+          "file": "MFU_mae_fah_luang_university.png",
+          "alt": "MFU",
+          "name": "ม.แม่ฟ้าหลวง",
+          "note": null,
+          "displaySize": 76
+        },
+        {
+          "order": 6,
+          "file": "KMITL_king_mongkut.png",
+          "alt": "KMITL",
+          "name": "สจล.",
+          "note": null,
+          "displaySize": 72
+        },
+        {
+          "order": 7,
+          "file": "SUT_suranaree_university.png",
+          "alt": "SUT",
+          "name": "ม.สุรนารี",
+          "note": null,
+          "displaySize": 68
+        },
+        {
+          "order": 8,
+          "file": "NU_naresuan_university.png",
+          "alt": "NU",
+          "name": "ม.นเรศวร",
+          "note": null,
+          "displaySize": 68
+        },
+        {
+          "order": 9,
+          "file": "STeP_CMU_science_park.png",
+          "alt": "STeP CMU",
+          "name": "อุทยานฯ ภาคเหนือ",
+          "note": null,
+          "displaySize": 64
+        },
+        {
+          "order": 10,
+          "file": "PTT_innovation_institute.png",
+          "alt": "PTT",
+          "name": "PTT Innovation",
+          "note": null,
+          "displaySize": 64
+        },
+        {
+          "order": 11,
+          "file": "MFii_IP_tech_transfer_MFU.png",
+          "alt": "MFii",
+          "name": "MFii",
+          "note": null,
+          "displaySize": 60
+        },
+        {
+          "order": 12,
+          "file": "KUVDL_kasetsart_vetlab.png",
+          "alt": "KUVDL",
+          "name": "KUVDL-BK",
+          "note": null,
+          "displaySize": 58
+        },
+        {
+          "order": 13,
+          "file": "UP_university_of_phayao.png",
+          "alt": "UP",
+          "name": "ม.พะเยา",
+          "note": null,
+          "displaySize": 58
+        },
+        {
+          "order": 14,
+          "file": "CRRU_rajabhat_chiangrai.png",
+          "alt": "CRRU",
+          "name": "มรภ.เชียงราย",
+          "note": null,
+          "displaySize": 54
+        },
+        {
+          "order": 15,
+          "file": "RMUTL_rajamangala_lanna.png",
+          "alt": "RMUTL",
+          "name": "มทร.ล้านนา",
+          "note": null,
+          "displaySize": 54
+        },
+        {
+          "order": 16,
+          "file": "TMAN_pharmaceutical.png",
+          "alt": "T.Man",
+          "name": "T.Man Pharma",
+          "note": null,
+          "displaySize": 52
+        },
+        {
+          "order": 17,
+          "file": "MIVANA_organic_forest_coffee.png",
+          "alt": "MiVana",
+          "name": "MiVana",
+          "note": null,
+          "displaySize": 48
+        }
+      ]
+    }
+  ]
+}
