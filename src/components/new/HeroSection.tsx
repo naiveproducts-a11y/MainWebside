@@ -1,17 +1,22 @@
 import { Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { newsArticles } from '../../config/newsArticles';
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  activeCategory: string | null;
+  setActiveCategory: React.Dispatch<React.SetStateAction<string | null>>;
+}
+
+export default function HeroSection({ activeCategory, setActiveCategory }: HeroSectionProps) {
   const { t } = useTranslation();
 
-  const tags = [
-    t('newsHero.tag1'),
-    t('newsHero.tag2'),
-    t('newsHero.tag3'),
-    t('newsHero.tag4'),
-    t('newsHero.tag5')
-  ];
+  // Categories — นับจาก data จริง
+  const categoryCount: Record<string, number> = {};
+  newsArticles.forEach((a) => {
+    categoryCount[a.category] = (categoryCount[a.category] ?? 0) + 1;
+  });
+  const categories = Object.keys(categoryCount);
 
   return (
     <section className="relative pt-32 pb-16 bg-white overflow-hidden">
@@ -74,14 +79,22 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.34 }}
             className="flex flex-wrap gap-2"
           >
-            {tags.map((tag, idx) => (
-              <span
-                key={idx}
-                className="px-4 py-2 rounded-xl bg-slate-50 border border-slate-100 text-[12px] font-bold text-slate-500 hover:bg-cyan-50 hover:border-cyan-200 hover:text-cyan-700 transition-all duration-200 cursor-pointer"
-              >
-                {tag}
-              </span>
-            ))}
+            {categories.map((cat, idx) => {
+              const isActive = activeCategory === cat;
+              return (
+                <span
+                  key={idx}
+                  onClick={() => setActiveCategory(isActive ? null : cat)}
+                  className={`px-4 py-2 rounded-xl border text-[12px] font-bold transition-all duration-200 cursor-pointer ${
+                    isActive
+                      ? 'bg-cyan-50 border-cyan-300 text-cyan-700 shadow-sm scale-105'
+                      : 'bg-slate-50 border-slate-100 text-slate-500 hover:bg-cyan-50 hover:border-cyan-200 hover:text-cyan-700 hover:scale-105'
+                  }`}
+                >
+                  {cat}
+                </span>
+              );
+            })}
           </motion.div>
 
         </div>

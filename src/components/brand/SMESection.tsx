@@ -2,6 +2,10 @@ import { Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import { FlaskConical, Cpu, Package } from 'lucide-react';
 
+import diff1Img from '../../assets/brand/nano_particles.png';
+import diff2Img from '../../assets/brand/green_pipette.png';
+import diff3Img from '../../assets/brand/thai_presenter.png';
+
 const differences = [
   {
     num: '01',
@@ -10,7 +14,7 @@ const differences = [
     lightBg: 'bg-cyan-50',
     lightText: 'text-cyan-600',
     lightBorder: 'border-cyan-100',
-    img: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=900&auto=format&fit=crop',
+    img: diff1Img,
     title: 'มีทีม R&D นาโน เป็นของตัวเอง',
     desc: 'ปรับสูตรได้ภายใน 5–7 วัน ไม่ใช่โรงงานที่แค่ผสม-บรรจุ-ส่ง เรามีนักวิทยาศาสตร์ที่พัฒนาสูตรใหม่ได้จริง',
   },
@@ -21,7 +25,7 @@ const differences = [
     lightBg: 'bg-fuchsia-50',
     lightText: 'text-fuchsia-600',
     lightBorder: 'border-fuchsia-100',
-    img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=900&auto=format&fit=crop',
+    img: diff2Img,
     title: 'เทคโนโลยีที่ คู่แข่งทำไม่ได้',
     desc: 'EcoGuard Plus และ Nano-Encapsulation 84 นาโนเมตร — สิทธิบัตรและงานวิจัยระดับนานาชาติรองรับ',
   },
@@ -32,7 +36,7 @@ const differences = [
     lightBg: 'bg-emerald-50',
     lightText: 'text-emerald-600',
     lightBorder: 'border-emerald-100',
-    img: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?q=80&w=900&auto=format&fit=crop',
+    img: diff3Img,
     title: 'สนับสนุน SME เริ่มที่ 100 ชิ้น',
     desc: 'MOQ ต่ำสุดในตลาด เริ่มได้ตั้งแต่หลักพัน ไม่ต้องลงทุนใหญ่ก่อนจะรู้ว่าแบรนด์จะขายดีแค่ไหน',
   },

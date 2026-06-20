@@ -71,7 +71,7 @@ export default function INGREDIENTLIBRARYSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="ingredient-library" className="py-24 bg-slate-50 relative overflow-hidden">
       <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-cyan-50/40 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/2 pointer-events-none" />
 
       <Container maxWidth="lg" className="relative z-10">

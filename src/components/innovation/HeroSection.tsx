@@ -86,6 +86,9 @@ export default function HeroSection() {
               size="large"
               className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-2xl font-bold normal-case text-base shadow-xl shadow-slate-200/80 transition-all hover:scale-105 active:scale-95"
               endIcon={<FlaskConical size={18} />}
+              onClick={() => {
+                document.getElementById('ingredient-library')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               {t('innovationPage.heroBtnExtracts')}
             </Button>
@@ -94,6 +97,9 @@ export default function HeroSection() {
               size="large"
               className="border border-slate-200 text-slate-700 hover:bg-slate-50 px-8 py-4 rounded-2xl font-bold normal-case text-base transition-all hover:border-slate-300"
               endIcon={<ArrowRight size={18} />}
+              onClick={() => {
+                document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               {t('innovationPage.heroBtnConsult')}
             </Button>

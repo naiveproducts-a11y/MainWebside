@@ -7,7 +7,7 @@ export default function StepSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="brand-steps" className="py-24 bg-slate-50 relative overflow-hidden">
       <Container maxWidth="lg">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">

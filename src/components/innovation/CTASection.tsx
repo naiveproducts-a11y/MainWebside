@@ -29,7 +29,7 @@ export default function CTASection() {
         </div>
 
         {/* Contact buttons grid — copied from ProductSection */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {contactButtons.map((btn) => (
             <motion.a
               key={btn.id}

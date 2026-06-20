@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Clock, TrendingUp, Tag } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, TrendingUp, Tag } from 'lucide-react';
 import { newsArticles } from '../../config/newsArticles';
 import { useTranslation } from 'react-i18next';
 
@@ -17,10 +17,14 @@ const categories = Object.entries(categoryCount).map(([label, count]) => ({ labe
 
 const PAGE_SIZE = 9;
 
-export default function ARTICLESSection() {
+interface ARTICLESSectionProps {
+  activeCategory: string | null;
+  setActiveCategory: React.Dispatch<React.SetStateAction<string | null>>;
+}
+
+export default function ARTICLESSection({ activeCategory, setActiveCategory }: ARTICLESSectionProps) {
   const { t, i18n } = useTranslation();
   const [currentPage, setCurrentPage] = useState(1);
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   // Popular sidebar — ใช้ 4 บทความแรกจาก data จริง
   const popular = newsArticles.slice(0, 4).map((a, i) => ({
@@ -121,9 +125,15 @@ export default function ARTICLESSection() {
                           </span>
                         ))}
                       </div>
-                      <div className="flex items-center gap-1 text-slate-300 shrink-0 ml-2">
-                        <Clock size={10} />
-                        <span className="text-[10px] font-medium">{article.readingTime} {t('articlesSection.readingTime')}</span>
+                      <div className="flex items-center gap-1 text-slate-400 shrink-0 ml-2">
+                        <Calendar size={10} />
+                        <span className="text-[10px] font-medium">
+                          {new Date(article.date).toLocaleDateString(i18n.language === 'en' ? 'en-US' : 'th-TH', {
+                            day: 'numeric',
+                            month: 'short',
+                            year: 'numeric'
+                          })}
+                        </span>
                       </div>
                     </div>
                   </div>

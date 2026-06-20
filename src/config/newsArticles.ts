@@ -22,6 +22,7 @@ export interface NewsArticle {
   images: string[];
   sourceUrl: string;
   keyTakeaways?: string[];
+  originalSlugs?: string[];
 }
 
 // ── Image loader (via import.meta.glob) ──────────────────
@@ -100,8 +101,8 @@ interface RawArticle {
   key_takeaway?: string | string[];
 }
 
-// ── Map JSON → NewsArticle[] ─────────────────────────────
-export const newsArticles: NewsArticle[] = rawData.map((item, idx) => {
+// Map JSON to NewsArticles first
+const allArticles: NewsArticle[] = rawData.map((item, idx) => {
   const rawItem = item as RawArticle;
   const body = parseContent(rawItem.content ?? []);
   const wordCount = body.reduce((sum, block) => sum + block.text.split(/\s+/).filter(Boolean).length, 0);
@@ -126,10 +127,107 @@ export const newsArticles: NewsArticle[] = rawData.map((item, idx) => {
   };
 });
 
+// Group by date
+const articlesByDate = new Map<string, NewsArticle[]>();
+allArticles.forEach((art) => {
+  const d = art.date;
+  if (!articlesByDate.has(d)) {
+    articlesByDate.set(d, []);
+  }
+  articlesByDate.get(d)!.push(art);
+});
+
+// Merge groups
+const mergedArticles: NewsArticle[] = [];
+articlesByDate.forEach((group, date) => {
+  if (group.length === 1) {
+    mergedArticles.push({
+      ...group[0],
+      originalSlugs: [group[0].slug],
+    });
+  } else {
+    // Sort group to ensure consistent primary article (e.g. by original ID)
+    group.sort((a, b) => a.id - b.id);
+    const primary = group[0];
+    const originalSlugs = group.map((a) => a.slug);
+
+    // Merge titles (only unique ones)
+    const uniqueTitles = Array.from(new Set(group.map((a) => a.title).filter(Boolean)));
+    const mergedTitle = uniqueTitles.join(' | ');
+
+    // Merge subtitles
+    const uniqueSubtitles = Array.from(new Set(group.map((a) => a.subtitle).filter(Boolean)));
+    const mergedSubtitle = uniqueSubtitles.join(' / ');
+
+    // Merge leads
+    const uniqueLeads = Array.from(new Set(group.map((a) => a.lead).filter(Boolean)));
+    const mergedLead = uniqueLeads.join(' | ');
+
+    // Merge bodies with dividers and subheadings
+    const mergedBody: ContentBlock[] = [];
+    group.forEach((art, idx) => {
+      if (idx > 0) {
+        mergedBody.push({ type: 'heading', text: art.title });
+        if (art.subtitle) {
+          mergedBody.push({ type: 'quote', text: art.subtitle });
+        }
+        if (art.lead) {
+          mergedBody.push({ type: 'paragraph', text: art.lead });
+        }
+      }
+      mergedBody.push(...art.body);
+    });
+
+    // Merge tags
+    const mergedTags = Array.from(new Set(group.flatMap((a) => a.tags)));
+
+    // Merge images
+    const mergedImages = Array.from(new Set(group.flatMap((a) => a.images)));
+
+    // Sum readingTime and wordCount
+    const mergedReadingTime = group.reduce((sum, a) => sum + a.readingTime, 0);
+    const mergedWordCount = group.reduce((sum, a) => sum + a.wordCount, 0);
+
+    // Merge keyTakeaways
+    const mergedTakeawaysSet = new Set<string>();
+    group.forEach((art) => {
+      if (art.keyTakeaways) {
+        art.keyTakeaways.forEach((t) => mergedTakeawaysSet.add(t));
+      }
+    });
+    const mergedTakeaways = mergedTakeawaysSet.size > 0 ? Array.from(mergedTakeawaysSet) : undefined;
+
+    // Source URL
+    const uniqueUrls = Array.from(new Set(group.map((a) => a.sourceUrl).filter(Boolean)));
+    const mergedSourceUrl = uniqueUrls.length > 0 ? uniqueUrls[0] : '';
+
+    mergedArticles.push({
+      id: primary.id,
+      slug: toSlug(primary.title, date),
+      title: mergedTitle,
+      subtitle: mergedSubtitle,
+      category: primary.category,
+      categoryColor: primary.categoryColor,
+      date,
+      readingTime: mergedReadingTime,
+      wordCount: mergedWordCount,
+      tags: mergedTags,
+      lead: mergedLead,
+      body: mergedBody,
+      images: mergedImages,
+      sourceUrl: mergedSourceUrl,
+      keyTakeaways: mergedTakeaways,
+      originalSlugs,
+    });
+  }
+});
+
+export const newsArticles = mergedArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 
 // ── Helpers ──────────────────────────────────────────────
 export const getArticleBySlug = (slug: string): NewsArticle | undefined =>
-  newsArticles.find((a) => a.slug === slug);
+  newsArticles.find((a) => a.slug === slug || a.originalSlugs?.includes(slug));
 
 export const getArticleById = (id: number): NewsArticle | undefined =>
   newsArticles.find((a) => a.id === id);

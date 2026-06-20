@@ -20,7 +20,7 @@ export default function MapSection() {
           {/* ── Left: Map Area ── */}
           <div className="flex flex-col gap-4">
             {/* Map Placeholder */}
-            <div className="relative w-full aspect-[16/9] lg:aspect-auto lg:h-[400px] border-2 border-slate-900 bg-slate-100 overflow-hidden shadow-[4px_4px_0_rgba(15,23,42,1)]">
+            <div className="relative w-full aspect-[16/9] lg:aspect-auto lg:h-[400px] border border-slate-100 bg-slate-100 overflow-hidden rounded-[32px] shadow-lg shadow-slate-200/50">
               <iframe
                 src="https://www.google.com/maps?q=บริษัท+นาอีฟอินโนว่า+จำกัด+Naive+Innova&output=embed"
                 width="100%"
@@ -39,14 +39,14 @@ export default function MapSection() {
                 href="https://www.google.com/maps/place/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97+%E0%B8%99%E0%B8%B2%E0%B8%AD%E0%B8%B5%E0%B8%9F%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%82%E0%B8%99%E0%B8%A7%E0%B9%88%E0%B8%B2+%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94+Naive+Innova/@19.6835782,99.7325789,17z/data=!3m1!4b1!4m6!3m5!1s0x30d773400764e151:0xd405ef5177d87264!8m2!3d19.6835782!4d99.7325789!16s%2Fg%2F11rk5gfbfb" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center gap-2 px-5 py-2.5 bg-white border-2 border-slate-900 text-slate-900 text-xs font-black hover:bg-slate-50 transition-colors"
+                className="flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white text-xs font-black rounded-xl hover:bg-cyan-600 transition-colors"
                >
                 <ExternalLink size={14} />
                 {t('contentPage.btnOpenMap')}
               </a>
               <button 
                 onClick={() => navigator.clipboard.writeText(t('contentPage.addressText'))}
-                className="flex items-center gap-2 px-5 py-2.5 bg-white border-2 border-slate-900 text-slate-900 text-xs font-black hover:bg-slate-50 transition-colors"
+                className="flex items-center gap-2 px-5 py-2.5 bg-white border border-slate-200 text-slate-700 text-xs font-black rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-colors"
               >
                 <Copy size={14} className="text-fuchsia-600" />
                 {t('contentPage.btnCopyAddress')}
@@ -57,7 +57,7 @@ export default function MapSection() {
           {/* ── Right: Info Sidebar ── */}
           <div className="flex flex-col gap-6">
             {/* Address Box */}
-            <div className="bg-[#EFECE6] border-2 border-slate-900 p-6 shadow-[4px_4px_0_rgba(15,23,42,1)]">
+            <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
               <div className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-3">
                 {t('contentPage.labelAddress')}
               </div>
@@ -67,7 +67,7 @@ export default function MapSection() {
             </div>
 
             {/* Operating Hours */}
-            <div className="bg-white border-2 border-slate-200 p-6">
+            <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
               <div className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-4">
                 {t('contentPage.labelWorkingTime')}
               </div>
@@ -101,7 +101,7 @@ export default function MapSection() {
             </div>
 
             {/* Travel Info */}
-            <div className="bg-white border-2 border-slate-200 p-6">
+            <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
               <div className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-4">
                 {t('contentPage.labelTravel')}
               </div>

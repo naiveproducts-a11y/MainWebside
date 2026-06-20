@@ -224,7 +224,7 @@ export default function DifferenceSection() {
         </div>
 
         {/* Media Buttons */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           {contactButtons.map((btn) => (
             <motion.a
               key={btn.id}

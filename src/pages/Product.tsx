@@ -13,6 +13,7 @@ import FAQSection from '../components/product/FAQSection';
 import ContactSection from '../components/ContactSection';
 import productsData from '../i18n/products/products-all.json';
 import type { Product as ProductType } from '../types/product';
+import SEO from '../components/SEO';
 
 export default function Product() {
   const { productId } = useParams();
@@ -23,8 +24,32 @@ export default function Product() {
     return <Navigate to="/" replace />;
   }
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.nameEn ? `${product.name} (${product.nameEn})` : product.name,
+    "description": product.pitch,
+    "image": `https://www.naviepetcare.com/logo.png`, // can be customized
+    "brand": {
+      "@type": "Brand",
+      "name": "Naive Innova"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": product.price,
+      "priceCurrency": "THB",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <>
+      <SEO 
+        title={`${product.name} (${product.nameEn || ''}) - รับผลิตเวชสำอางดูแลสัตว์เลี้ยง`}
+        description={`${product.name} - ${product.pitch} ต้นทุนเริ่มต้นราคาประหยัด ขั้นต่ำน้อย (MOQ 100 ชิ้น) พร้อมให้บริการจดทะเบียนครบวงจร`}
+        keywords={`${product.name}, ${product.nameEn || ''}, ผลิต${product.name}, OEM ${product.name}, ผลิตภัณฑ์สัตว์เลี้ยง, ${product.categoryTh}`}
+        schemaMarkup={productSchema}
+      />
       <HeroSection product={product} />
       <ProductSection product={product} />
       <TechnologySection />

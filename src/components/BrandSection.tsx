@@ -9,7 +9,12 @@ import logoData from '../assets/partner/logo-section.json';
 const partnerLogoModules = import.meta.glob<{ default: string }>('../assets/partner/*.{png,jpg,jpeg,svg}', { eager: true });
 
 const imageModules = import.meta.glob<{ default: string }>('../assets/brand/*.png', { eager: true });
-const brandImages = Object.values(imageModules).map((mod) => mod.default);
+const brandImages = Object.entries(imageModules)
+  .filter(([path]) => {
+    const filename = path.split('/').pop() || '';
+    return /^\d+\.png$/.test(filename);
+  })
+  .map(([, mod]) => mod.default);
 
 // Helper to get partner logo URL from filename in JSON
 const getPartnerLogoUrl = (filename: string) => {
@@ -68,13 +73,13 @@ export default function BrandSection() {
   const { t } = useTranslation();
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const scroll = (direction: 'left' | 'right') => {
+  const scroll = (direction: 'left' | 'right', multiplier = 4) => {
     if (scrollRef.current) {
       const itemWidth = scrollRef.current.firstElementChild instanceof HTMLElement
         ? scrollRef.current.firstElementChild.offsetWidth
         : 300;
       const gap = 16; // gap-4 is 16px
-      const scrollAmount = (itemWidth + gap) * 4; // Scroll 4 items
+      const scrollAmount = (itemWidth + gap) * multiplier;
       const { scrollLeft } = scrollRef.current;
       const scrollTo = direction === 'left' ? scrollLeft - scrollAmount : scrollLeft + scrollAmount;
       scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
@@ -85,13 +90,13 @@ export default function BrandSection() {
     const timer = setInterval(() => {
       if (scrollRef.current) {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-        if (scrollLeft + clientWidth >= scrollWidth - 10) {
+        if (scrollLeft + clientWidth >= scrollWidth - 25) {
           scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
-          scroll('right');
+          scroll('right', 1);
         }
       }
-    }, 15000);
+    }, 3500);
     return () => clearInterval(timer);
   }, []);
 
@@ -202,13 +207,13 @@ export default function BrandSection() {
               <motion.div
                 key={index}
                 whileHover={{ y: -8 }}
-                className="flex items-center justify-center p-6 bg-white/60 rounded-3xl md:h-32 w-full shadow-sm hover:shadow-md transition-all duration-500"
+                className="flex items-center justify-center p-2 md:h-32 w-full transition-all duration-500"
               >
                 <img
                   src={getPartnerLogoUrl(logo.file)}
                   alt={logo.alt}
-                  style={{ height: (logo.displaySize || 60) * 1.6, width: 'auto' }}
-                  className="max-w-full h-auto object-contain transition-transform duration-500"
+                  style={{ height: (logo.displaySize || 60) * 2.0, width: 'auto' }}
+                  className="max-w-full max-h-full object-contain transition-transform duration-500"
                 />
               </motion.div>
             ))}
@@ -257,14 +262,13 @@ export default function BrandSection() {
                   <motion.div
                     key={index}
                     whileHover={{ y: -5 }}
-                    className="group relative w-full h-32 flex flex-col items-center justify-center p-4 bg-white rounded-[20px] shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer overflow-hidden border border-slate-50"
+                    className="group w-full h-32 flex flex-col items-center justify-center p-4 transition-all duration-500 cursor-pointer"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-transparent to-slate-50/50 group-hover:to-cyan-50/30 transition-all duration-500" />
                     <img
                       src={getPartnerLogoUrl(logo.file)}
                       alt={logo.alt}
-                      style={{ maxHeight: (logo.displaySize || 60) * 0.8 }}
-                      className="relative z-10 max-w-[80%] object-contain transition-all duration-700"
+                      style={{ maxHeight: (logo.displaySize || 60) * 1.1 }}
+                      className="max-w-[95%] object-contain transition-all duration-700"
                     />
                   </motion.div>
                 ))}

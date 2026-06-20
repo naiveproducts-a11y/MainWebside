@@ -84,7 +84,7 @@ export default function ContactSection() {
       </div>
 
       {/* Bottom Branding Bar */}
-      <div className="mt-16 pt-8 border-t border-slate-200/60 text-center">
+      <div className="mt-24 pt-12 border-t border-slate-200/60 text-center">
         <Typography variant="overline" className="text-slate-400 font-bold tracking-[0.4em] text-[10px] md:text-xs">
           NAIVE INNOVA <span className="mx-4 opacity-50">•</span> DEEP-TECH PET CARE PLATFORM <span className="mx-4 opacity-50">•</span> LINE @NAIVEPETCARE
         </Typography>

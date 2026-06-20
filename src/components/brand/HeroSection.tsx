@@ -89,6 +89,9 @@ export default function HeroSection() {
               size="large"
               className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-2xl font-bold normal-case text-base shadow-xl shadow-slate-200/80 transition-all hover:scale-105 active:scale-95"
               endIcon={<ArrowRight size={18} />}
+              onClick={() => {
+                document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               {t('brandingPage.heroBtnStart')}
             </Button>
@@ -96,6 +99,9 @@ export default function HeroSection() {
               variant="outlined"
               size="large"
               className="border border-slate-200 text-slate-700 hover:bg-slate-50 px-8 py-4 rounded-2xl font-bold normal-case text-base transition-all hover:border-slate-300"
+              onClick={() => {
+                document.getElementById('brand-steps')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               {t('brandingPage.heroBtnSteps')}
             </Button>
