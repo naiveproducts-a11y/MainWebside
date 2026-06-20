@@ -22,7 +22,7 @@ export default function SEO({
 
   useEffect(() => {
     // 1. Title
-    const formattedTitle = title.includes('naive innova') || title.includes('Naive Innova') ? title : `${title} | naive innova`;
+    const formattedTitle = title.includes('naive innova') || title.includes('Naive Innova') ? title : `naive innova | ${title}`;
     document.title = formattedTitle;
 
     // 2. Meta description
