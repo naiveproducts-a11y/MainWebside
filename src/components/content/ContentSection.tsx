@@ -197,7 +197,7 @@ export default function ContentSection() {
             {/* Box 4: Social Media Shortcuts */}
             <div className="grid grid-cols-3 gap-4">
               {/* Facebook */}
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 bg-white border-2 border-slate-100 rounded-2xl hover:border-blue-500 group transition-all duration-300">
+              <a href="https://www.facebook.com/NaiveInnova" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 bg-white border-2 border-slate-100 rounded-2xl hover:border-blue-500 group transition-all duration-300">
                 <div className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors mb-2">
                   <Facebook size={18} fill="currentColor" className="stroke-none" />
                 </div>
@@ -205,7 +205,7 @@ export default function ContentSection() {
               </a>
 
               {/* TikTok */}
-              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 bg-white border-2 border-slate-100 rounded-2xl hover:border-black group transition-all duration-300">
+              <a href="https://www.tiktok.com/@naive_pet.care" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 bg-white border-2 border-slate-100 rounded-2xl hover:border-black group transition-all duration-300">
                 <div className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-100 group-hover:text-black transition-colors mb-2">
                   <TikTokIcon size={18} />
                 </div>
@@ -213,7 +213,7 @@ export default function ContentSection() {
               </a>
 
               {/* YouTube */}
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 bg-white border-2 border-slate-100 rounded-2xl hover:border-red-500 group transition-all duration-300">
+              <a href="https://www.youtube.com/@NaiveInnova-OEM%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%87Nano" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 bg-white border-2 border-slate-100 rounded-2xl hover:border-red-500 group transition-all duration-300">
                 <div className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-red-50 group-hover:text-red-500 transition-colors mb-2">
                   <Youtube size={18} fill="currentColor" className="stroke-none" />
                 </div>
