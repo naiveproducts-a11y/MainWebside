@@ -61,8 +61,8 @@ export default function NewDetail() {
         title={article.title}
         body={article.body}
       />
-      <DetailKeyTakeaways keyTakeaways={article.keyTakeaways} />
-      <DetailProfile sourceUrl={article.sourceUrl} />
+      <DetailKeyTakeaways keyTakeaways={article.keyTakeaways} sourceUrl={article.sourceUrl} />
+      <DetailProfile />
     </>
   );
 }

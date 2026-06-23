@@ -36,8 +36,8 @@ export default function Home() {
       <ProductSection />
       <BrandSection />
       <ProductCatalogSection />
-      <InnovationNewsSection />
       <HomeCertifiedSection />
+      <InnovationNewsSection />
       <FAQSection />
       <ContactSection />
     </>

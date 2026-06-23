@@ -1,14 +1,15 @@
 import { Container } from '@mui/material';
 import { motion } from 'framer-motion';
-import { Lightbulb } from 'lucide-react';
-
+import { Lightbulb, ExternalLink, Facebook, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface DetailKeyTakeawaysProps {
   keyTakeaways?: string[];
+  sourceUrl?: string;
 }
 
-
-export default function DetailKeyTakeaways({ keyTakeaways }: DetailKeyTakeawaysProps) {
+export default function DetailKeyTakeaways({ keyTakeaways, sourceUrl }: DetailKeyTakeawaysProps) {
+  const { i18n } = useTranslation();
   // Use article-specific takeaways if provided, otherwise fall back to defaults
   const items = keyTakeaways && keyTakeaways.length > 0 ? keyTakeaways : undefined;
 
@@ -69,6 +70,56 @@ export default function DetailKeyTakeaways({ keyTakeaways }: DetailKeyTakeawaysP
               ))}
             </div>
           </motion.div>
+
+          {/* News Source Premium Slate Block */}
+          {sourceUrl && (() => {
+            const cleanUrl = sourceUrl.trim();
+            const isFacebook = cleanUrl.toLowerCase().includes('facebook.com');
+            const displayLabel = isFacebook 
+              ? 'Facebook: Naive Innova' 
+              : (() => {
+                  try {
+                    return new URL(cleanUrl).hostname.replace('www.', '');
+                  } catch (e) {
+                    return cleanUrl;
+                  }
+                })();
+
+            return (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mt-6 flex justify-start"
+              >
+                <a
+                  href={cleanUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3.5 px-6 py-3.5 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl text-slate-600 hover:text-slate-800 transition-all duration-300 shadow-sm group no-underline"
+                >
+                  {/* Dynamic Icon */}
+                  {isFacebook ? (
+                    <Facebook size={18} className="text-[#1877F2] flex-shrink-0" />
+                  ) : (
+                    <Globe size={18} className="text-cyan-500 flex-shrink-0" />
+                  )}
+
+                  <div className="flex items-center gap-2 text-sm font-bold">
+                    <span className="text-slate-400">
+                      {i18n.language === 'en' ? 'News Source:' : 'ที่มาของข่าว:'}
+                    </span>
+                    <span className="text-slate-700 group-hover:text-cyan-600 transition-colors underline decoration-dotted decoration-slate-300 group-hover:decoration-cyan-400">
+                      {displayLabel}
+                    </span>
+                  </div>
+
+                  <ExternalLink size={14} className="text-slate-400 group-hover:text-slate-600 transition-colors opacity-70" />
+                </a>
+              </motion.div>
+            );
+          })()}
 
         </div>
       </Container>

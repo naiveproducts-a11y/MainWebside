@@ -10,8 +10,8 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-1',
     fileName: 'ของที่ระลึก_750ปีเมืองเชียงราย_แสตมป์.jpeg',
-    titleTh: 'ของที่ระลึก 750ปีเมืองเชียงราย แสตมป์',
-    titleEn: 'ของที่ระลึก 750ปีเมืองเชียงราย แสตมป์',
+    titleTh: 'ของที่ระลึกครบรอบ 750 ปี เมืองเชียงราย (แสตมป์ที่ระลึกหอการค้าจังหวัดเชียงราย)',
+    titleEn: 'Chiang Rai 750th Anniversary Commemorative Stamp',
     category: 'award'
   },
   {
@@ -31,8 +31,8 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-4',
     fileName: 'รางวัล-มาตรฐาน-Naive_004.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 004',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 004',
+    titleTh: 'ประกาศเกียรติคุณผู้สร้างชื่อเสียงและเกียรติคุณ จุฬาลงกรณ์มหาวิทยาลัย (อาจารย์ ดร.ธีรพงศ์ ยะทา)',
+    titleEn: 'Chulalongkorn University Certificate of Appreciation (Dr. Teerapong Yata)',
     category: 'award'
   },
   {
@@ -52,15 +52,15 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-7',
     fileName: 'รางวัล-มาตรฐาน-Naive_007.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 007',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 007',
+    titleTh: 'รางวัล R2G Regional Qualifier 2023 (Regional to Global, Northern Science Park)',
+    titleEn: 'Regional to Global R2G 2023 Regional Qualifier Plaque',
     category: 'award'
   },
   {
     id: 'cert-8',
     fileName: 'รางวัล-มาตรฐาน-Naive_008.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 008',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 008',
+    titleTh: 'ประกาศเกียรติคุณผู้เชิดชูเกียรติบุคลากร จุฬาลงกรณ์มหาวิทยาลัย ประจำปี 2564 (อาจารย์ ดร.ธีรพงศ์ ยะทา)',
+    titleEn: 'Chulalongkorn University Certificate of Appreciation 2021 (Dr. Teerapong Yata)',
     category: 'award'
   },
   {
@@ -73,29 +73,29 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-10',
     fileName: 'รางวัล-มาตรฐาน-Naive_010.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 010',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 010',
+    titleTh: 'รางวัลเกียรติยศวิทยานิพนธ์ระดับดีเด่น (Director\'s Award, NANOTEC 2558)',
+    titleEn: 'NANOTEC Director\'s Award 2015 for Outstanding Thesis Presentation',
     category: 'award'
   },
   {
     id: 'cert-11',
     fileName: 'รางวัล-มาตรฐาน-Naive_011.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 011',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 011',
+    titleTh: 'รางวัลความสำเร็จดีเด่น ครบรอบ 13 ปี NANOTEC (Outstanding Achievement Award)',
+    titleEn: 'NANOTEC 13th Anniversary Outstanding Achievement Award (Dr. Teerapong Yata)',
     category: 'award'
   },
   {
     id: 'cert-12',
     fileName: 'รางวัล-มาตรฐาน-Naive_012.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 012',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 012',
+    titleTh: 'โล่ประกาศเกียรติคุณ กรมส่งเสริมอุตสาหกรรม (DIPROM)',
+    titleEn: 'DIPROM Appreciation Plaque (Department of Industrial Promotion)',
     category: 'award'
   },
   {
     id: 'cert-13',
     fileName: 'รางวัล-มาตรฐาน-Naive_013.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 013',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 013',
+    titleTh: 'ประกาศนียบัตรผู้นำพันธุ์ดีพร้อม (DIPROM HEROES, บริษัท เพ็ทเฟรนลี่ คอมมูนิตี้ จำกัด)',
+    titleEn: 'DIPROM HEROES Certificate of Participation for Pet Friendly Community Co., Ltd.',
     category: 'award'
   },
   {
@@ -108,8 +108,8 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-15',
     fileName: 'รางวัล-มาตรฐาน-Naive_015.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 015',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 015',
+    titleTh: 'ใบประกาศเกียรติคุณงานประชุมวิชาการผู้ประกอบการนวัตกรรมภาคเหนือ (NIA Northern Region Portfolio Symposium 2025)',
+    titleEn: 'NIA Portfolio Symposium Northern Region 2025 Certificate of Achievement',
     category: 'award'
   },
   {
@@ -129,15 +129,15 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-18',
     fileName: 'รางวัล-มาตรฐาน-Naive_018.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 018',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 018',
+    titleTh: 'โล่พระราชทาน รางวัลนักวิทยาศาสตร์รุ่นใหม่ ประจำปี 2562 (ดร.ธีรพงศ์ ยะทา)',
+    titleEn: 'Royal Plaque for Outstanding Young Scientist Award 2019',
     category: 'award'
   },
   {
     id: 'cert-19',
     fileName: 'รางวัล-มาตรฐาน-Naive_019.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 019',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 019',
+    titleTh: 'เกียรติบัตร รางวัลนักวิทยาศาสตร์รุ่นใหม่ ประจำปี 2562 (ดร.ธีรพงศ์ ยะทา)',
+    titleEn: 'Young Scientist Award 2019 Certificate for Dr. Teerapong Yata',
     category: 'award'
   },
   {
@@ -150,50 +150,50 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-21',
     fileName: 'รางวัล-มาตรฐาน-Naive_021.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 021',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 021',
+    titleTh: 'โล่ขอบคุณวิทยากรบรรยายพิเศษ (The 4th PCSHS Science Symposium 2024)',
+    titleEn: 'Appreciation Plaque for Keynote Speaker at The 4th PCSHS Science Symposium 2024',
     category: 'award'
   },
   {
     id: 'cert-22',
     fileName: 'รางวัล-มาตรฐาน-Naive_022.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 022',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 022',
+    titleTh: 'ประกาศนียบัตร DIPROM Startup Connect (บริษัท นาอีฟ อินโนว่า จำกัด)',
+    titleEn: 'DIPROM Startup Connect Certificate for Naive Innova Co., Ltd.',
     category: 'award'
   },
   {
     id: 'cert-23',
     fileName: 'รางวัล-มาตรฐาน-Naive_023.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 023',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 023',
+    titleTh: 'รางวัล Startup of the Year (Basecamp24 2023 Award of Honor)',
+    titleEn: 'Basecamp24 2023 Startup of the Year Award',
     category: 'award'
   },
   {
     id: 'cert-24',
     fileName: 'รางวัล-มาตรฐาน-Naive_024.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 024',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 024',
+    titleTh: 'รางวัลที่ 1 การนำเสนอผลงานวิจัยด้วยวาจา กรมวิทยาศาสตร์การแพทย์ (ดร.ธีรพงศ์ ยะทา)',
+    titleEn: '1st Prize Oral Presentation Award at the 23rd National Medical Sciences Conference',
     category: 'award'
   },
   {
     id: 'cert-25',
     fileName: 'รางวัล-มาตรฐาน-Naive_026.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 026',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 026',
+    titleTh: 'เกียรติบัตรขอบคุณผู้สนับสนุนการฝึกงานสหกิจศึกษา คณะวิทยาศาสตร์ มหาวิทยาลัยเชียงใหม่',
+    titleEn: 'Chiang Mai University Science Cooperative Education Host Certificate',
     category: 'award'
   },
   {
     id: 'cert-26',
     fileName: 'รางวัล-มาตรฐาน-Naive_027.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 027',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 027',
+    titleTh: 'โล่ขอบคุณวิทยากรบรรยายพิเศษ (The 4th PCSHS Science Symposium 2024)',
+    titleEn: 'Appreciation Plaque for Keynote Speaker at The 4th PCSHS Science Symposium 2024',
     category: 'award'
   },
   {
     id: 'cert-27',
     fileName: 'รางวัล-มาตรฐาน-Naive_028.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 028',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 028',
+    titleTh: 'ประกาศนียบัตรผู้ผ่านโครงการและทุนสนับสนุน DIPROM Angel Fund 2564',
+    titleEn: 'DIPROM Angel Fund 2021 Certificate and Funding Support',
     category: 'award'
   },
   {
@@ -206,85 +206,71 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-29',
     fileName: 'รางวัล-มาตรฐาน-Naive_030.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 030',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 030',
-    category: 'award'
-  },
-  {
-    id: 'cert-30',
-    fileName: 'รางวัล-มาตรฐาน-Naive_031.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 031',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 031',
+    titleTh: 'รางวัลผลงานวิจัยแห่งชาติที่มีผลกระทบสูง (Prime Minister\'s TRIUP Awards 2022)',
+    titleEn: 'Prime Minister\'s TRIUP Awards 2022 for High-Impact National Research',
     category: 'award'
   },
   {
     id: 'cert-31',
     fileName: 'รางวัล-มาตรฐาน-Naive_032.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 032',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 032',
+    titleTh: 'รางวัลชนะเลิศศิษย์เก่าสหราชอาณาจักรดีเด่นประจำประเทศไทย 2020 (UK Alumni Award) สาขา Entrepreneurship',
+    titleEn: 'Study UK Alumni Awards 2020 Winner in Entrepreneurship',
     category: 'award'
   },
   {
     id: 'cert-32',
     fileName: 'รางวัล-มาตรฐาน-Naive_033.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 033',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 033',
+    titleTh: 'ได้รับรางวัลนักวิทยาศาสตร์ดีเด่นจากมหาวิทยาลัยจุฬาลงกรณ์มหาวิทยาลัย คณะสัตวแพทยศาสตร์',
+    titleEn: 'Outstanding Scientist Award, Faculty of Veterinary Science, Chulalongkorn University',
     category: 'award'
   },
   {
     id: 'cert-33',
     fileName: 'รางวัล-มาตรฐาน-Naive_034.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 034',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 034',
+    titleTh: 'รางวัลวิจัยดีเด่นสาขาเภสัชศาสตร์ (Nagai Award Thailand 2019)',
+    titleEn: 'Nagai Award Thailand for Research in Pharmaceutical Sciences 2019',
     category: 'award'
   },
   {
     id: 'cert-34',
     fileName: 'รางวัล-มาตรฐาน-Naive_035.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 035',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 035',
+    titleTh: 'ปกรางวัลวิทยานิพนธ์ระดับดีเด่น สำนักงานคณะกรรมการวิจัยแห่งชาติ (วช.)',
+    titleEn: 'NRCT Outstanding Thesis Award Cover',
     category: 'award'
   },
   {
     id: 'cert-35',
     fileName: 'รางวัล-มาตรฐาน-Naive_036.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 036',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 036',
+    titleTh: 'ประกาศเกียรติคุณรางวัลวิทยานิพนธ์ระดับดีเด่น ประจำปี 2558 สภาวิจัยแห่งชาติ (ดร.ธีรพงศ์ ยะทา)',
+    titleEn: 'NRCT Outstanding Thesis Award 2015 for Dr. Teerapong Yata',
     category: 'award'
   },
   {
     id: 'cert-36',
     fileName: 'รางวัล-มาตรฐาน-Naive_037.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 037',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 037',
-    category: 'award'
-  },
-  {
-    id: 'cert-37',
-    fileName: 'รางวัล-มาตรฐาน-Naive_038.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 038',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 038',
+    titleTh: 'รางวัลผลงานนวัตกรรมสายอุดมศึกษา ระดับดีเด่น ประจำปี 2563 (สำนักงานการวิจัยแห่งชาติ)',
+    titleEn: 'NRCT Outstanding Higher Education Innovation Award 2020',
     category: 'award'
   },
   {
     id: 'cert-38',
     fileName: 'รางวัล-มาตรฐาน-Naive_039.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 039',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 039',
+    titleTh: 'โล่เกียรติคุณ กรมวิทยาศาสตร์การแพทย์ กระทรวงสาธารณสุข',
+    titleEn: 'Department of Medical Sciences Appreciation Plaque',
     category: 'award'
   },
   {
     id: 'cert-39',
     fileName: 'รางวัล-มาตรฐาน-Naive_040.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 040',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 040',
+    titleTh: 'ได้รับรางวัลสาขาการวิจัยพัฒนาสู่ความมั่นคงทางสุขภาพ: เรื่องพาหะนำส่งระดับนาโนจากแบคทีเรีย โอเฟสที่ถูกดัดแปลงเพื่อการนำส่งอย่างมีเป้าหมายของ DNA วัคซีนชนิดกิน ในการประชุมวิชาการวิทยาศาสตร์การแพทย์ครั้งที่ 23 ประจำปี 2558',
+    titleEn: '1st Prize Research and Development for Health Security: Engineered Bacteriophage-based Nanocarriers for Targeted Oral DNA Vaccine Delivery, The 23rd National Medical Sciences Conference 2015',
     category: 'award'
   },
   {
     id: 'cert-40',
     fileName: 'รางวัล-มาตรฐาน-Naive_041.jpeg',
-    titleTh: 'รางวัล-มาตรฐาน-Naive 041',
-    titleEn: 'รางวัล-มาตรฐาน-Naive 041',
+    titleTh: 'บันทึกข้อตกลงความร่วมมือการจัดการอาชีวศึกษาระบบวิชาชีพระหว่างวิทยาลัยเกษตรและเทคโนโลยีพะเยาร่วมกับบริษัท นาอีฟอินโนวา จำกัด',
+    titleEn: 'Memorandum of Agreement on Vocational Education Management between Phayao Agricultural and Technology College and Naive Innova Co., Ltd.',
     category: 'award'
   },
   {
@@ -346,8 +332,8 @@ export const homeCertificates: HomeCertificate[] = [
   {
     id: 'cert-49',
     fileName: 'รางวัล_Study-UK-Alumni-2020_Entrepreneurial-Award_พี่ต้น.jpeg',
-    titleTh: 'รางวัล Study-UK-Alumni-2020 Entrepreneurial-Award พี่ต้น',
-    titleEn: 'รางวัล Study-UK-Alumni-2020 Entrepreneurial-Award พี่ต้น',
+    titleTh: 'รางวัลชนะเลิศศิษย์เก่าสหราชอาณาจักรดีเด่นประจำประเทศไทย 2020 (UK Alumni Award) สาขา Entrepreneurship',
+    titleEn: 'Study UK Alumni Awards 2020 Winner in Entrepreneurship',
     category: 'award'
   },
 ];

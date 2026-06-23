@@ -40,6 +40,7 @@ export default function ContactSection() {
             <motion.a
               href="https://lin.ee/tao11ce"
               target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
               className="bg-[#00B900] text-white px-8 py-4 rounded-full flex items-center justify-center gap-3 shadow-lg shadow-[#00B900]/20 transition-all font-bold"

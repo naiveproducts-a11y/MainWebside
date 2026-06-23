@@ -31,8 +31,15 @@
 }
 
 @layer base {
-  body {
+  html, body {
     @apply antialiased text-slate-800 bg-slate-50 font-sans;
     margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 }

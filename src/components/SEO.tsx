@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 interface SEOProps {
   title: string;
@@ -19,6 +20,7 @@ export default function SEO({
   schemaMarkup,
 }: SEOProps) {
   const location = useLocation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     // 1. Title
@@ -84,8 +86,8 @@ export default function SEO({
     }
 
     // 7. Lang attribute
-    document.documentElement.lang = 'th';
-  }, [title, description, keywords, canonicalPath, ogImage, schemaMarkup, location.pathname]);
+    document.documentElement.lang = i18n.language || 'th';
+  }, [title, description, keywords, canonicalPath, ogImage, schemaMarkup, location.pathname, i18n.language]);
 
   return null;
 }

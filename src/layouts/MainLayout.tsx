@@ -1,6 +1,7 @@
 import React from 'react';
 import TheHeader from './TheHeader';
 import TheFooter from './TheFooter';
+import FloatingContactButton from '../components/FloatingContactButton';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -17,6 +18,9 @@ export default function MainLayout({ children }: MainLayoutProps) {
       </main>
 
       <TheFooter />
+      
+      {/* Global Floating Action Button */}
+      <FloatingContactButton />
     </div>
   );
 }
