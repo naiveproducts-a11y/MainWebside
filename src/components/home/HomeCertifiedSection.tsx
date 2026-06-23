@@ -60,12 +60,6 @@ export default function HomeCertifiedSection() {
     return item.category === activeTab;
   });
 
-  // Dynamically repeat items so there are enough for the marquee to scroll seamlessly on wide viewports
-  const marqueeItems = [...filteredItems];
-  while (marqueeItems.length > 0 && marqueeItems.length < 12) {
-    marqueeItems.push(...filteredItems);
-  }
-
   // Tabs translation or labels
   const tabLabels = {
     awards: i18n.language === 'en' ? 'Awards & Honors' : 'เกียรติบัตร & รางวัล',
@@ -159,11 +153,11 @@ export default function HomeCertifiedSection() {
           <div 
             className="animate-marquee"
             style={{ 
-              animation: `marquee ${Math.max(marqueeItems.length * 6, 25)}s linear infinite`
+              animation: `marquee ${Math.max(filteredItems.length * 6, 20)}s linear infinite`
             }}
           >
             {/* Duplicate list twice for perfect seamless wrapping */}
-            {[...marqueeItems, ...marqueeItems].map((item, index) => (
+            {[...filteredItems, ...filteredItems].map((item, index) => (
               <div
                 key={`${item.fileName}-${index}`}
                 className="w-[200px] sm:w-[250px] md:w-[320px] flex-shrink-0 cursor-pointer group snap-start"

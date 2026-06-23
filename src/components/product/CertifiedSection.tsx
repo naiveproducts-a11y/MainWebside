@@ -1,6 +1,6 @@
 import { Typography, Container } from '@mui/material';
 import { motion } from 'framer-motion';
-import { ShieldCheck, ChevronLeft, ChevronRight, Download, ExternalLink } from 'lucide-react';
+import { ShieldCheck, ChevronLeft, ChevronRight, Download, ExternalLink, FileText } from 'lucide-react';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { homeCertificates } from '../../config/homeCertifications';
@@ -137,15 +137,16 @@ export default function CertifiedSection() {
                   <div className="w-full h-full p-4 sm:p-5 md:p-6 flex flex-col">
                     <div className="flex-grow flex items-center justify-center bg-slate-50 rounded-xl sm:rounded-2xl md:rounded-3xl border border-slate-100 overflow-hidden relative group-hover:bg-slate-100 transition-colors">
                       {item.isPdf ? (
-                        <div className="w-full h-full relative overflow-hidden bg-white">
-                          <iframe
-                            src={`${item.url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-                            className="absolute -top-8 -left-4 w-[calc(100%+32px)] h-[calc(100%+60px)] border-none pointer-events-none"
-                            scrolling="no"
-                            title={item.displayName}
-                          />
-                          {/* Shimmer / Overlay to make it look like a thumbnail */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/5 to-transparent pointer-events-none z-10" />
+                        <div className="w-full h-full flex flex-col items-center justify-center bg-slate-50 border border-slate-100/50 rounded-lg p-6 text-center select-none">
+                          <div className="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mb-3 group-hover:scale-110 transition-transform duration-300">
+                            <FileText className="w-6 h-6" />
+                          </div>
+                          <span className="text-[10px] font-black text-cyan-600 uppercase tracking-widest mb-1">
+                            PDF Report
+                          </span>
+                          <span className="text-[9px] font-bold text-slate-400">
+                            {i18n.language === 'en' ? 'Click to View' : 'คลิกเพื่อเปิดดูผลทดสอบ'}
+                          </span>
                         </div>
                       ) : (
                         <img
