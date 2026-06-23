@@ -1,6 +1,6 @@
 import { Typography, Container } from '@mui/material';
 import { motion } from 'framer-motion';
-import { ShieldCheck, ChevronLeft, ChevronRight, Download, ExternalLink, FileText } from 'lucide-react';
+import { ShieldCheck, ChevronLeft, ChevronRight, Download, ExternalLink } from 'lucide-react';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { homeCertificates } from '../../config/homeCertifications';
@@ -14,10 +14,20 @@ export default function CertifiedSection() {
 
   // Transform glob files into displayable items
   const certifications = Object.entries(certFiles)
+    .filter(([path]) => !path.includes('_preview.')) // Filter out standalone preview images
     .map(([path, module]) => {
       const fileName = path.split('/').pop() || '';
       const isPdf = fileName.toLowerCase().endsWith('.pdf');
       const url = module.default;
+
+      // Resolve the preview image for PDF files dynamically
+      let previewUrl = url;
+      if (isPdf) {
+        const previewPath = path.replace(/\.pdf$/i, '_preview.jpg');
+        if (certFiles[previewPath]) {
+          previewUrl = certFiles[previewPath].default;
+        }
+      }
 
       // Find config match
       const match = homeCertificates.find(c => c.fileName === fileName);
@@ -46,6 +56,7 @@ export default function CertifiedSection() {
       return {
         path,
         url,
+        previewUrl,
         fileName,
         displayName,
         isPdf,
@@ -136,25 +147,16 @@ export default function CertifiedSection() {
                   {/* File Preview Area */}
                   <div className="w-full h-full p-4 sm:p-5 md:p-6 flex flex-col">
                     <div className="flex-grow flex items-center justify-center bg-slate-50 rounded-xl sm:rounded-2xl md:rounded-3xl border border-slate-100 overflow-hidden relative group-hover:bg-slate-100 transition-colors">
-                      {item.isPdf ? (
-                        <div className="w-full h-full flex flex-col items-center justify-center bg-slate-50 border border-slate-100/50 rounded-lg p-6 text-center select-none">
-                          <div className="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mb-3 group-hover:scale-110 transition-transform duration-300">
-                            <FileText className="w-6 h-6" />
-                          </div>
-                          <span className="text-[10px] font-black text-cyan-600 uppercase tracking-widest mb-1">
-                            PDF Report
-                          </span>
-                          <span className="text-[9px] font-bold text-slate-400">
-                            {i18n.language === 'en' ? 'Click to View' : 'คลิกเพื่อเปิดดูผลทดสอบ'}
-                          </span>
+                      {item.isPdf && (
+                        <div className="absolute top-4 left-4 bg-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider shadow-sm z-10 select-none">
+                          PDF
                         </div>
-                      ) : (
-                        <img
-                          src={item.url}
-                          alt={item.displayName}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        />
                       )}
+                      <img
+                        src={item.previewUrl}
+                        alt={item.displayName}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
 
                       {/* Hover Overlay */}
                       <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2 sm:gap-4">

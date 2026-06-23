@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Typography, Container } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Award, Download, Eye, X, FileText } from 'lucide-react';
+import { Award, Download, Eye, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { homeCertificates } from '../../config/homeCertifications';
 
@@ -15,45 +15,57 @@ export default function HomeCertifiedSection() {
   const [selectedTitle, setSelectedTitle] = useState<string>('');
 
   // Process files
-  const items = Object.entries(certFiles).map(([path, module]) => {
-    const fileName = path.split('/').pop() || '';
-    const url = module.default;
-    const isPdf = fileName.toLowerCase().endsWith('.pdf');
+  const items = Object.entries(certFiles)
+    .filter(([path]) => !path.includes('_preview.')) // Filter out standalone preview images
+    .map(([path, module]) => {
+      const fileName = path.split('/').pop() || '';
+      const url = module.default;
+      const isPdf = fileName.toLowerCase().endsWith('.pdf');
 
-    // Find custom certificate configuration
-    const match = homeCertificates.find(c => c.fileName === fileName);
+      // Resolve the preview image for PDF files dynamically
+      let previewUrl = url;
+      if (isPdf) {
+        const previewPath = path.replace(/\.pdf$/i, '_preview.jpg');
+        if (certFiles[previewPath]) {
+          previewUrl = certFiles[previewPath].default;
+        }
+      }
 
-    // Use name from configuration, otherwise fallback to cleaned filename
-    let displayName = match 
-      ? (i18n.language === 'en' ? match.titleEn : match.titleTh)
-      : fileName
-        .replace(/\.[^/.]+$/, "") // Remove extension
-        .replace(/_/g, " ")       // Replace underscores with spaces
-        .replace(/รางวัล-มาตรฐาน-Naive/g, "Naive Certificate") // Friendlier placeholder
-        .replace(/รางวัล/g, "Award")
-        .trim();
+      // Find custom certificate configuration
+      const match = homeCertificates.find(c => c.fileName === fileName);
 
-    // Determine category based on config, otherwise determine based on filename
-    let category: 'awards' | 'standards' = 'standards';
-    if (match) {
-      category = match.category === 'award' ? 'awards' : 'standards';
-    } else if (
-      fileName.includes('รางวัล') || 
-      fileName.includes('Award') || 
-      fileName.includes('Alumni') || 
-      fileName.includes('แสตมป์')
-    ) {
-      category = 'awards';
-    }
+      // Use name from configuration, otherwise fallback to cleaned filename
+      let displayName = match 
+        ? (i18n.language === 'en' ? match.titleEn : match.titleTh)
+        : fileName
+          .replace(/\.[^/.]+$/, "") // Remove extension
+          .replace(/_/g, " ")       // Replace underscores with spaces
+          .replace(/รางวัล-มาตรฐาน-Naive/g, "Naive Certificate") // Friendlier placeholder
+          .replace(/รางวัล/g, "Award")
+          .trim();
 
-    return {
-      url,
-      fileName,
-      displayName,
-      isPdf,
-      category
-    };
-  });
+      // Determine category based on config, otherwise determine based on filename
+      let category: 'awards' | 'standards' = 'standards';
+      if (match) {
+        category = match.category === 'award' ? 'awards' : 'standards';
+      } else if (
+        fileName.includes('รางวัล') || 
+        fileName.includes('Award') || 
+        fileName.includes('Alumni') || 
+        fileName.includes('แสตมป์')
+      ) {
+        category = 'awards';
+      }
+
+      return {
+        url,
+        previewUrl,
+        fileName,
+        displayName,
+        isPdf,
+        category
+      };
+    });
 
   // Filter items
   const filteredItems = items.filter(item => {
@@ -175,26 +187,17 @@ export default function HomeCertifiedSection() {
                   
                   {/* Outer Frame Border (Simulating realistic wood/metal framing mat) */}
                   <div className="flex-grow bg-slate-50 border border-slate-100 rounded-lg overflow-hidden flex items-center justify-center relative p-1.5 md:p-2 group-hover:bg-slate-100/50 transition-colors">
-                    {item.isPdf ? (
-                      <div className="w-full h-full flex flex-col items-center justify-center bg-slate-50 border border-slate-100/50 rounded-lg p-6 text-center select-none">
-                        <div className="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mb-3 group-hover:scale-110 transition-transform duration-300">
-                          <FileText className="w-6 h-6" />
-                        </div>
-                        <span className="text-[10px] font-black text-cyan-600 uppercase tracking-widest mb-1">
-                          PDF Report
-                        </span>
-                        <span className="text-[9px] font-bold text-slate-400">
-                          {i18n.language === 'en' ? 'Click to View' : 'คลิกเพื่อเปิดดูผลทดสอบ'}
-                        </span>
+                    {item.isPdf && (
+                      <div className="absolute top-2 left-2 bg-red-500 text-white text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider shadow-sm z-10 select-none">
+                        PDF
                       </div>
-                    ) : (
-                      <img
-                        src={item.url}
-                        alt={item.displayName}
-                        loading="lazy"
-                        className="w-full h-full object-contain filter group-hover:brightness-95 transition-all duration-300"
-                      />
                     )}
+                    <img
+                      src={item.previewUrl}
+                      alt={item.displayName}
+                      loading="lazy"
+                      className="w-full h-full object-contain filter group-hover:brightness-95 transition-all duration-300"
+                    />
 
                     {/* Action Overlay */}
                     <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2">
