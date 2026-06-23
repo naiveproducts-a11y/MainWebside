@@ -33,10 +33,10 @@ export default function Home() {
       />
       <HeroSection />
       <AboutSection />
+      <HomeCertifiedSection />
       <ProductSection />
       <BrandSection />
       <ProductCatalogSection />
-      <HomeCertifiedSection />
       <InnovationNewsSection />
       <FAQSection />
       <ContactSection />

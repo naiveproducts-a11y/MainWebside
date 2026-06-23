@@ -75,8 +75,8 @@ export default function HowToOrderSection() {
         </div>
 
         {/* 2. Media Buttons: Compact image grid - Replaced CTA with this */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-          {contactButtons.slice(0, 2).map((btn) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          {contactButtons.map((btn) => (
             <motion.a
               key={btn.id}
               href={btn.href}

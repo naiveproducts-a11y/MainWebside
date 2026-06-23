@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Typography, Container } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Award, Download, Eye, X } from 'lucide-react';
+import { Award, Download, Eye, X, FileText } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { homeCertificates } from '../../config/homeCertifications';
 
@@ -59,6 +59,12 @@ export default function HomeCertifiedSection() {
   const filteredItems = items.filter(item => {
     return item.category === activeTab;
   });
+
+  // Dynamically repeat items so there are enough for the marquee to scroll seamlessly on wide viewports
+  const marqueeItems = [...filteredItems];
+  while (marqueeItems.length > 0 && marqueeItems.length < 12) {
+    marqueeItems.push(...filteredItems);
+  }
 
   // Tabs translation or labels
   const tabLabels = {
@@ -153,11 +159,11 @@ export default function HomeCertifiedSection() {
           <div 
             className="animate-marquee"
             style={{ 
-              animation: `marquee ${Math.max(filteredItems.length * 6, 20)}s linear infinite`
+              animation: `marquee ${Math.max(marqueeItems.length * 6, 25)}s linear infinite`
             }}
           >
             {/* Duplicate list twice for perfect seamless wrapping */}
-            {[...filteredItems, ...filteredItems].map((item, index) => (
+            {[...marqueeItems, ...marqueeItems].map((item, index) => (
               <div
                 key={`${item.fileName}-${index}`}
                 className="w-[200px] sm:w-[250px] md:w-[320px] flex-shrink-0 cursor-pointer group snap-start"
@@ -176,14 +182,16 @@ export default function HomeCertifiedSection() {
                   {/* Outer Frame Border (Simulating realistic wood/metal framing mat) */}
                   <div className="flex-grow bg-slate-50 border border-slate-100 rounded-lg overflow-hidden flex items-center justify-center relative p-1.5 md:p-2 group-hover:bg-slate-100/50 transition-colors">
                     {item.isPdf ? (
-                      <div className="w-full h-full relative overflow-hidden bg-white rounded border border-slate-100">
-                        <iframe
-                          src={`${item.url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-                          className="absolute -top-6 -left-4 w-[calc(100%+32px)] h-[calc(100%+48px)] border-none pointer-events-none"
-                          scrolling="no"
-                          title={item.displayName}
-                        />
-                        <div className="absolute inset-0 bg-transparent pointer-events-none z-10" />
+                      <div className="w-full h-full flex flex-col items-center justify-center bg-slate-50 border border-slate-100/50 rounded-lg p-6 text-center select-none">
+                        <div className="w-12 h-12 rounded-full bg-cyan-50 flex items-center justify-center text-cyan-600 mb-3 group-hover:scale-110 transition-transform duration-300">
+                          <FileText className="w-6 h-6" />
+                        </div>
+                        <span className="text-[10px] font-black text-cyan-600 uppercase tracking-widest mb-1">
+                          PDF Report
+                        </span>
+                        <span className="text-[9px] font-bold text-slate-400">
+                          {i18n.language === 'en' ? 'Click to View' : 'คลิกเพื่อเปิดดูผลทดสอบ'}
+                        </span>
                       </div>
                     ) : (
                       <img
