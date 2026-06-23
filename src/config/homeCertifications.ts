@@ -370,5 +370,12 @@ export const homeCertificates: HomeCertificate[] = [
     titleTh: 'รายงานการวิจัยประสิทธิภาพเจลสมานแผลใบบัวบกและเปลือกมังคุดในสุนัขและแมว (จุฬาลงกรณ์มหาวิทยาลัย)',
     titleEn: 'Wound Healing Efficacy Evaluation of Centella & Mangosteen Extracts - Chulalongkorn University',
     category: 'standard'
+  },
+  {
+    id: 'cert-55',
+    fileName: 'ผลทดสอบเจลสมานแผล1.jpg',
+    titleTh: 'รายงานการทดสอบทางคลินิกประสิทธิภาพการสมานแผลสัตว์เลี้ยง Petlary Gel',
+    titleEn: 'Clinical Trial Efficacy Evaluation of Petlary Wound Healing Gel',
+    category: 'standard'
   }
 ];
