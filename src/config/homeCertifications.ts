@@ -336,4 +336,39 @@ export const homeCertificates: HomeCertificate[] = [
     titleEn: 'Study UK Alumni Awards 2020 Winner in Entrepreneurship',
     category: 'award'
   },
+  {
+    id: 'cert-50',
+    fileName: 'Ecoguard plus  .pdf.pdf',
+    titleTh: 'รายงานคุณสมบัติและประสิทธิภาพการต้านเชื้อ EcoGuard Plus (นาโนเทคโนโลยีทางสัตวแพทย์)',
+    titleEn: 'EcoGuard Plus Sustainable Antimicrobial Nanoencapsulation Efficacy Report',
+    category: 'standard'
+  },
+  {
+    id: 'cert-51',
+    fileName: 'KUVDL-IND-010 ประเภทสิ่งส่งตรวจและอัตราค่าบริการ(V4.pdf',
+    titleTh: 'คู่มือประเภทการตรวจวิเคราะห์ทางสัตวแพทย์และอัตราค่าบริการ มหาวิทยาลัยเกษตรศาสตร์ (KUVDL)',
+    titleEn: 'Kasetsart University Veterinary Diagnostic Laboratory (KUVDL) Services & Pricelist',
+    category: 'standard'
+  },
+  {
+    id: 'cert-52',
+    fileName: 'ผลทดสอบ2.pdf',
+    titleTh: 'รายงานผลการตรวจวิเคราะห์ประสิทธิภาพการต้านเชื้อรา Malassezia pachydermatis (ม.เกษตรศาสตร์)',
+    titleEn: 'Antifungal Efficacy Report against Malassezia pachydermatis - Kasetsart University',
+    category: 'standard'
+  },
+  {
+    id: 'cert-53',
+    fileName: 'ผลทดสอบ3.pdf',
+    titleTh: 'รายงานผลการตรวจวิเคราะห์ฤทธิ์ยับยั้งเชื้อแบคทีเรียดื้อยา MRSP และเชื้อก่อโรคในสัตว์เลี้ยง (ม.เกษตรศาสตร์)',
+    titleEn: 'Antibacterial Efficacy Report against Drug-Resistant MRSP & Pathogens - Kasetsart University',
+    category: 'standard'
+  },
+  {
+    id: 'cert-54',
+    fileName: 'ผลทดสอบเจลสมานแผล.pdf',
+    titleTh: 'รายงานการวิจัยประสิทธิภาพเจลสมานแผลใบบัวบกและเปลือกมังคุดในสุนัขและแมว (จุฬาลงกรณ์มหาวิทยาลัย)',
+    titleEn: 'Wound Healing Efficacy Evaluation of Centella & Mangosteen Extracts - Chulalongkorn University',
+    category: 'standard'
+  }
 ];
