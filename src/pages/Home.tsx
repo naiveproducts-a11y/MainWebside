@@ -4,6 +4,7 @@ import ProductSection from '../components/ProductSection';
 import ProductCatalogSection from '../components/ProductCatalogSection';
 import BrandSection from '../components/BrandSection';
 import InnovationNewsSection from '../components/InnovationNewsSection';
+import HomeCertifiedSection from '../components/home/HomeCertifiedSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import SEO from '../components/SEO';
@@ -36,6 +37,7 @@ export default function Home() {
       <BrandSection />
       <ProductCatalogSection />
       <InnovationNewsSection />
+      <HomeCertifiedSection />
       <FAQSection />
       <ContactSection />
     </>
