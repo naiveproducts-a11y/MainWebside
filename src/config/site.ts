@@ -4,7 +4,7 @@ export const siteConfig = {
   url: "https://naiveinnova.com",
   links: {
     facebook: "https://facebook.com/naiveinnova",
-    line: "https://line.me/R/ti/p/@naiveinnova",
+    line: "https://lin.ee/WgGBkGZJ",
     youtube: "https://youtube.com/@naiveinnova",
   },
   navLinks: [

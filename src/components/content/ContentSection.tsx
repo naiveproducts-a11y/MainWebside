@@ -135,7 +135,7 @@ export default function ContentSection() {
             className="lg:col-span-5 flex flex-col gap-4"
           >
             {/* Box 1: LINE */}
-            <a href="https://line.me/R/ti/p/@naivepetcare" target="_blank" rel="noopener noreferrer" className="group block bg-white border-2 border-slate-100 rounded-2xl p-6 hover:-translate-y-1 hover:border-cyan-300 transition-all duration-300 shadow-sm hover:shadow-md">
+            <a href="https://lin.ee/WgGBkGZJ" target="_blank" rel="noopener noreferrer" className="group block bg-white border-2 border-slate-100 rounded-2xl p-6 hover:-translate-y-1 hover:border-cyan-300 transition-all duration-300 shadow-sm hover:shadow-md">
               <div className="flex items-start gap-5">
                 <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600 shrink-0 group-hover:scale-110 transition-transform">
                   <MessageCircle size={24} fill="currentColor" />

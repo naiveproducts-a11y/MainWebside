@@ -18,7 +18,7 @@ export const contactButtons = [
     id: 'line',
     img: contactLine,
     alt: 'Line',
-    href: 'https://lin.ee/tao11ce',
+    href: 'https://lin.ee/WgGBkGZJ',
     target: '_blank',
     gridClass: ''
   },
