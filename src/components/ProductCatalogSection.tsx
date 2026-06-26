@@ -114,14 +114,26 @@ export default function ProductCatalogSection() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-0">
                 {category.items.map((item, itemIndex) => (
-                  <motion.div
+                  <motion.a
                     key={itemIndex}
+                    href={(() => {
+                      let base = '';
+                      switch (catIndex) {
+                        case 0: base = 'cleaning'; break;
+                        case 1: base = 'spray'; break;
+                        case 2: base = 'skin'; break;
+                      }
+                      return `/${base}/${item.id}`;
+                    })()}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: itemIndex * 0.1, duration: 0.6 }}
-                    onClick={() => handleItemClick(catIndex, item.id)}
-                    className="group relative cursor-pointer rounded-none overflow-hidden hover:z-10 transition-all duration-700 aspect-[4/5] bg-white"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleItemClick(catIndex, item.id);
+                    }}
+                    className="group relative cursor-pointer rounded-none overflow-hidden hover:z-10 transition-all duration-700 aspect-[4/5] bg-white block"
                   >
                     {/* Full Bleed Image */}
                     <img
@@ -136,7 +148,7 @@ export default function ProductCatalogSection() {
                         {t(item.nameKey)}
                       </Typography>
                     </div>
-                  </motion.div>
+                  </motion.a>
                 ))}
               </div>
             </div>
